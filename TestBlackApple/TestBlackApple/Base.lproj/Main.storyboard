@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RfO-GY-3e3"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Qt-Od-VYw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2p-qC-khN">
+                                <rect key="frame" x="107" y="268" width="106" height="31"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="pop alert" backgroundImage="normal.gif">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="hover.gif"/>
+                                <connections>
+                                    <action selector="popAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9b0-od-cPi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsH-ji-un9">
+                                <rect key="frame" x="161" y="20" width="143" height="30"/>
+                                <state key="normal" title="UR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Acu-d2-7jd">
+                                <rect key="frame" x="16" y="530" width="30" height="30"/>
+                                <state key="normal" title="LL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRb-Nu-Y1w">
+                                <rect key="frame" x="274" y="530" width="30" height="30"/>
+                                <state key="normal" title="LR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aA-v2-ZKN">
+                                <rect key="frame" x="16" y="20" width="106" height="30"/>
+                                <state key="normal" title="UL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Qt-Od-VYw" firstAttribute="top" secondItem="eRb-Nu-Y1w" secondAttribute="bottom" constant="8" id="6j2-7o-qfM"/>
+                            <constraint firstItem="Acu-d2-7jd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="aQE-Um-QV1"/>
+                            <constraint firstItem="8aA-v2-ZKN" firstAttribute="top" secondItem="RfO-GY-3e3" secondAttribute="bottom" id="bGa-H5-bkc"/>
+                            <constraint firstItem="bsH-ji-un9" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="bag-LZ-0Pw"/>
+                            <constraint firstItem="0Qt-Od-VYw" firstAttribute="top" secondItem="Acu-d2-7jd" secondAttribute="bottom" constant="8" id="eFk-kF-wph"/>
+                            <constraint firstItem="8aA-v2-ZKN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jpv-kR-S9J"/>
+                            <constraint firstItem="bsH-ji-un9" firstAttribute="top" secondItem="RfO-GY-3e3" secondAttribute="bottom" id="uEX-Od-Mm1"/>
+                            <constraint firstItem="eRb-Nu-Y1w" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="wHG-kZ-eCR"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="m_alertButton" destination="j2p-qC-khN" id="nse-ru-6Wq"/>
+                        <outlet property="m_potrait" destination="kh9-bI-dsS" id="Fd1-LO-1yg"/>
+                        <outletCollection property="m_potraitPopAlert" destination="j2p-qC-khN" id="87p-Qg-Bvb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="577" y="526"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="85K-pp-fSd">
+            <objects>
+                <viewController id="CsI-cl-Lux" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gUD-wt-4lC"/>
+                        <viewControllerLayoutGuide type="bottom" id="dhK-CE-B0l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2dM-UC-6qQ">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNa-2K-KJg">
+                                <rect key="frame" x="107" y="268" width="106" height="31"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="titleEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="pop alert" backgroundImage="normal.gif">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="hover.gif"/>
+                                <connections>
+                                    <action selector="popAlert:" destination="CsI-cl-Lux" eventType="touchUpInside" id="JHq-7L-sIZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gJ-Bj-i4H">
+                                <rect key="frame" x="161" y="20" width="143" height="30"/>
+                                <state key="normal" title="UR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpL-Et-4KV">
+                                <rect key="frame" x="16" y="282" width="30" height="30"/>
+                                <state key="normal" title="LL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6R-o6-6J2">
+                                <rect key="frame" x="522" y="282" width="30" height="30"/>
+                                <state key="normal" title="LR">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XvI-re-Q76">
+                                <rect key="frame" x="16" y="20" width="106" height="30"/>
+                                <state key="normal" title="UL">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gpL-Et-4KV" firstAttribute="leading" secondItem="2dM-UC-6qQ" secondAttribute="leadingMargin" id="ElR-uc-VzY"/>
+                            <constraint firstItem="XvI-re-Q76" firstAttribute="leading" secondItem="2dM-UC-6qQ" secondAttribute="leadingMargin" id="HHK-ZZ-sCh"/>
+                            <constraint firstItem="dhK-CE-B0l" firstAttribute="top" secondItem="gpL-Et-4KV" secondAttribute="bottom" constant="8" id="IhO-xc-qF5"/>
+                            <constraint firstItem="8gJ-Bj-i4H" firstAttribute="top" secondItem="gUD-wt-4lC" secondAttribute="bottom" id="NpZ-8G-PH4"/>
+                            <constraint firstItem="k6R-o6-6J2" firstAttribute="trailing" secondItem="2dM-UC-6qQ" secondAttribute="trailingMargin" id="OLn-b2-xdb"/>
+                            <constraint firstItem="XvI-re-Q76" firstAttribute="top" secondItem="gUD-wt-4lC" secondAttribute="bottom" id="kAR-t0-aoo"/>
+                            <constraint firstItem="dhK-CE-B0l" firstAttribute="top" secondItem="k6R-o6-6J2" secondAttribute="bottom" constant="8" id="ms2-I5-c2C"/>
+                            <constraint firstItem="8gJ-Bj-i4H" firstAttribute="trailing" secondItem="2dM-UC-6qQ" secondAttribute="trailingMargin" id="rWr-CS-1CZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="m_alertButton" destination="TNa-2K-KJg" id="gpG-Tm-aIl"/>
+                        <outlet property="m_landscape" destination="2dM-UC-6qQ" id="Kc3-9b-yDF"/>
+                        <outletCollection property="m_potraitPopAlert" destination="TNa-2K-KJg" id="ANH-eK-uLs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tCD-D5-cGg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hover.gif" width="44" height="23"/>
+        <image name="normal.gif" width="52" height="25"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
