@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7FA98A7F-4799-486B-9428-2B7AE8D09776</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9BAC55EEDB2C9C086C1862C0E3B5CD300485BDF1</key>
+		<string>https://github.com/fuyanzhi1234/DevelopIOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NavCtrl/NavCtrl.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9BAC55EEDB2C9C086C1862C0E3B5CD300485BDF1</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/fuyanzhi1234/DevelopIOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9BAC55EEDB2C9C086C1862C0E3B5CD300485BDF1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9BAC55EEDB2C9C086C1862C0E3B5CD300485BDF1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DevelopIOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
