@@ -11,6 +11,7 @@
 @interface RootViewController ()
 
 @property (nonatomic, retain) NSMutableArray *array;
+@property (nonatomic, retain) NSMutableDictionary *dictionary;
 
 @end
 
@@ -20,12 +21,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.array = [NSMutableArray arrayWithObjects:@"x1", @"x2", @"x3", @"x4", @"x5", @"x6", @"x7", @"x8", @"x9", @"x10", nil];
+    self.dictionary = [[NSMutableDictionary alloc] initWithCapacity:self.array.count];
     CGRect rect = CGRectMake(0, 40, 300, 420);
     UITableView *tableView = [[UITableView alloc] initWithFrame:rect];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.separatorColor = [UIColor clearColor];
-    [tableView setEditing:YES];
+    [tableView setEditing:NO];
     
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:10 inSection:0];
 //    [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionTop animated:YES];
@@ -49,9 +51,11 @@
     UITableViewCell *curCell = [tableView cellForRowAtIndexPath:indexPath];
     if (curCell.accessoryType == UITableViewCellAccessoryCheckmark) {
         curCell.accessoryType = UITableViewCellAccessoryDetailButton;
+        [self.dictionary setObject:[NSNumber numberWithInteger:UITableViewCellAccessoryDetailButton] forKey:[NSNumber numberWithInteger:indexPath.row]];
     }
     else{
         curCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [self.dictionary setObject:[NSNumber numberWithInteger:UITableViewCellAccessoryCheckmark] forKey:[NSNumber numberWithInteger:indexPath.row]];
     }
 }
 
@@ -60,27 +64,29 @@
     NSString *title = [self.array objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
-
-        cell.textLabel.text = [NSString stringWithFormat:@"title : %@", title];
-        cell.detailTextLabel.text = @"Detail Information here";
-        UIImage *image1 = [UIImage imageNamed:@"01.gif"];
-        UIImage *image2 = [UIImage imageNamed:@"02.gif"];
-        
-        cell.imageView.image = image1;
-        cell.imageView.highlightedImage = image2;
-        
-        if (indexPath.row == 1) {
-            cell.backgroundColor = [UIColor purpleColor];
-        }
-        else{
-            CGRect rect = CGRectMake(0, 0, 0, 0);
-            UIView *view = [[UIView alloc] initWithFrame:rect];
-            [view setBackgroundColor:[UIColor brownColor]];
-            [cell setBackgroundView:view];
-        }
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     cell.textLabel.text = [NSString stringWithFormat:@"title : %@", title];
+    cell.detailTextLabel.text = @"Detail Information here";
+    UIImage *image1 = [UIImage imageNamed:@"01.gif"];
+    UIImage *image2 = [UIImage imageNamed:@"02.gif"];
+    
+    cell.imageView.image = image1;
+    cell.imageView.highlightedImage = image2;
+    
+    NSNumber *rowAccessory = self.dictionary[[NSNumber numberWithInteger:indexPath.row]];
+    cell.accessoryType = (UITableViewCellAccessoryType)[rowAccessory integerValue];
+    
+    if (indexPath.row == 1) {
+        cell.backgroundColor = [UIColor purpleColor];
+    }
+    else{
+        cell.backgroundColor = [UIColor redColor];
+//        CGRect rect = CGRectMake(0, 0, 0, 0);
+//        UIView *view = [[UIView alloc] initWithFrame:rect];
+//        [view setBackgroundColor:[UIColor brownColor]];
+//        [cell setBackgroundView:view];
+    }
     NSLog(@"%@", indexPath.description);
     return cell;
 }
@@ -115,6 +121,10 @@
         [self.array insertObject:@"xxx" atIndex:indexPath.row];
         [tableView insertRowsAtIndexPaths:[NSArray arrayWithObjects:indexPath, nil] withRowAnimation:YES];
     }
+}
+
+- (NSInteger)tableView:(UITableView *)tableView indentationLevelForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return indexPath.row;
 }
 
 /*
