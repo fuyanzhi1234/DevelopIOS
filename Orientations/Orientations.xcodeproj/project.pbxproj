@@ -16,6 +16,7 @@
 		8ACEDD801B948BFC001602D7 /* OrientationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACEDD7F1B948BFC001602D7 /* OrientationsTests.m */; };
 		8ACEDD9C1B96C3A1001602D7 /* RotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACEDD9A1B96C3A1001602D7 /* RotationViewController.m */; };
 		8ACEDD9D1B96C3A1001602D7 /* RotationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ACEDD9B1B96C3A1001602D7 /* RotationViewController.xib */; };
+		8AF34F2D1BAA91A50092CC9C /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AF34F2C1BAA91A50092CC9C /* pic.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		8ACEDD991B96C3A1001602D7 /* RotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationViewController.h; sourceTree = "<group>"; };
 		8ACEDD9A1B96C3A1001602D7 /* RotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationViewController.m; sourceTree = "<group>"; };
 		8ACEDD9B1B96C3A1001602D7 /* RotationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RotationViewController.xib; sourceTree = "<group>"; };
+		8AF34F2C1BAA91A50092CC9C /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		8ACEDD631B948BFC001602D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8AF34F2C1BAA91A50092CC9C /* pic.jpg */,
 				8ACEDD641B948BFC001602D7 /* Info.plist */,
 				8ACEDD651B948BFC001602D7 /* main.m */,
 			);
@@ -211,6 +214,7 @@
 				8ACEDD741B948BFC001602D7 /* LaunchScreen.xib in Resources */,
 				8ACEDD9D1B96C3A1001602D7 /* RotationViewController.xib in Resources */,
 				8ACEDD711B948BFC001602D7 /* Images.xcassets in Resources */,
+				8AF34F2D1BAA91A50092CC9C /* pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
