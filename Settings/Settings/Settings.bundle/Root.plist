@@ -6,65 +6,37 @@
 	<array>
 		<dict>
 			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
-			<key>Title</key>
-			<string></string>
-			<key>Key</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
-			<key>Title</key>
-			<string></string>
-			<key>Key</key>
-			<string></string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSTextFieldSpecifier</string>
-			<key>Title</key>
-			<string></string>
-			<key>Key</key>
-			<string></string>
-		</dict>
-		<dict>
+			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string>FirstGroup</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
 		</dict>
 		<dict>
+			<key>Key</key>
+			<string>username</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
 			<string>Username</string>
-			<key>Key</key>
-			<string>username</string>
 			<key>AutocapitalizationType</key>
 			<string>None</string>
-			<key>AutocorrectionType</key>
-			<string>No</string>
 		</dict>
 		<dict>
+			<key>Key</key>
+			<string>password</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 			<key>Title</key>
 			<string>Password</string>
-			<key>Key</key>
-			<string>password</string>
 			<key>IsSecure</key>
 			<true/>
 			<key>AutocapitalizationType</key>
 			<string>None</string>
-			<key>AutocorrectionType</key>
-			<string>No</string>
 		</dict>
 		<dict>
-			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
-			<key>Title</key>
-			<string>Protocol</string>
 			<key>Titles</key>
 			<array>
 				<string>HTTP</string>
@@ -81,20 +53,24 @@
 				<string>IMAP</string>
 				<string>POP3</string>
 			</array>
-			<key>Key</key>
-			<string>protocol</string>
 			<key>DefaultValue</key>
 			<string>SMTP</string>
+			<key>Key</key>
+			<string>protocol</string>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Protocol</string>
 		</dict>
 		<dict>
+			<key>DefaultValue</key>
+			<true/>
+			<key>Key</key>
+			<string>wrapdrive</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
 			<string>Wrap Drive</string>
-			<key>Key</key>
-			<string>wrapdrive</string>
-			<key>DefaultValue</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -103,20 +79,20 @@
 			<string>Wrap</string>
 		</dict>
 		<dict>
-			<key>Type</key>
-			<string>PSSliderSpecifier</string>
-			<key>Key</key>
-			<string>wrapFactor</string>
-			<key>DefaultValue</key>
-			<real>0.5</real>
-			<key>MinimumValue</key>
-			<integer>0</integer>
-			<key>MaximumValue</key>
-			<integer>1</integer>
 			<key>MinimumValueImage</key>
 			<string>min</string>
+			<key>DefaultValue</key>
+			<real>0.5</real>
+			<key>Key</key>
+			<string>wrapFactor</string>
 			<key>MaximumValueImage</key>
 			<string>max</string>
+			<key>MinimumValue</key>
+			<integer>0</integer>
+			<key>Type</key>
+			<string>PSSliderSpecifier</string>
+			<key>MaximumValue</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -125,16 +101,14 @@
 			<string>AdditionInfo</string>
 		</dict>
 		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
 			<key>Title</key>
-			<string>More</string>
-			<key>New item</key>
+			<string>More Settings</string>
+			<key>File</key>
+			<string>SubList</string>
+			<key>Key</key>
 			<string></string>
-			<key></key>
-			<string></string>
-			<key>Values</key>
-			<array>
-				<string></string>
-			</array>
 		</dict>
 	</array>
 	<key>StringsTable</key>
