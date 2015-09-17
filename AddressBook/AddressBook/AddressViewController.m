@@ -17,6 +17,8 @@
 
 @implementation AddressViewController
 
+UISearchDisplayController *searchController;
+
 static NSString *identifier = @"myCell";
 
 - (void)viewDidLoad {
@@ -30,7 +32,7 @@ static NSString *identifier = @"myCell";
     UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     self.addressTableView.tableHeaderView = searchBar;
     
-    UISearchDisplayController *searchController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
+    searchController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
     searchController.delegate = self;
     searchController.searchResultsDataSource = self;
     
@@ -59,7 +61,7 @@ static NSString *identifier = @"myCell";
 */
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    if (self.addressTableView.tag == 1) {
+    if (tableView.tag == 1) {
         return [self.addressNameDictionary.allKeys count];
     }
     else
@@ -69,7 +71,7 @@ static NSString *identifier = @"myCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    if (self.addressTableView.tag == 1) {
+    if (tableView.tag == 1) {
         NSString *key = [self.addressNameDictionary.allKeys objectAtIndex:section];
         return [[self.addressNameDictionary objectForKey:key] count];
     }
@@ -80,7 +82,7 @@ static NSString *identifier = @"myCell";
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    if (self.addressTableView.tag == 1) {
+    if (tableView.tag == 1) {
         return [self.addressKeyArray objectAtIndex:section];
     }
     else
@@ -91,7 +93,7 @@ static NSString *identifier = @"myCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
-    if (self.addressTableView.tag == 1) {
+    if (tableView.tag == 1) {
         NSString *key = [self.addressNameDictionary.allKeys objectAtIndex:indexPath.section];
         NSArray *array = [self.addressNameDictionary objectForKey:key];
         cell.textLabel.text = [array objectAtIndex:indexPath.row];
@@ -105,7 +107,7 @@ static NSString *identifier = @"myCell";
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
-    if (self.addressTableView.tag == 1) {
+    if (tableView.tag == 1) {
         return self.addressKeyArray;
     }
     else
@@ -118,10 +120,11 @@ static NSString *identifier = @"myCell";
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:identifier];
 }
 
-- (bool) searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
+    [self.filterNames removeAllObjects];
     if (searchString.length > 0) {
         NSPredicate *pre = [NSPredicate predicateWithBlock:^BOOL(NSString *name, NSDictionary *bindings) {
-            NSRange range = [name rangeOfString:searchString];
+            NSRange range = [name rangeOfString:searchString options:NSCaseInsensitiveSearch];
             return range.location != NSNotFound;
         }];
         for (NSString *key in self.addressKeyArray) {
@@ -129,6 +132,7 @@ static NSString *identifier = @"myCell";
             [self.filterNames addObjectsFromArray:array];
         }
     }
+    NSLog(@"%@", self.filterNames);
     return YES;
 }
 @end

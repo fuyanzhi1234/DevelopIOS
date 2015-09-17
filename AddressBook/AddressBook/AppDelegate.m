@@ -20,7 +20,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     AddressViewController *addControl = [[AddressViewController alloc] init];
-    self.window.rootViewController = addControl;
+    UIViewController *vavControl = [[UINavigationController alloc] initWithRootViewController:addControl];
+    self.window.rootViewController = vavControl;
     [self.window makeKeyAndVisible];
     return YES;
 }
