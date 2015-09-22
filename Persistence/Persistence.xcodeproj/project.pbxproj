@@ -13,6 +13,9 @@
 		8402AECB1BB0370100DEBEA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8402AEC91BB0370100DEBEA3 /* Main.storyboard */; };
 		8402AECD1BB0370100DEBEA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8402AECC1BB0370100DEBEA3 /* Assets.xcassets */; };
 		8402AED01BB0370100DEBEA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8402AECE1BB0370100DEBEA3 /* LaunchScreen.storyboard */; };
+		8A32E4191BB0FDAF0012FF60 /* BIDFourLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32E4181BB0FDAF0012FF60 /* BIDFourLines.m */; settings = {ASSET_TAGS = (); }; };
+		8A32E4221BB144170012FF60 /* zzzViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A32E4201BB144170012FF60 /* zzzViewViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8A32E4231BB144170012FF60 /* zzzViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A32E4211BB144170012FF60 /* zzzViewViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		8402AECC1BB0370100DEBEA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8402AECF1BB0370100DEBEA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8402AED11BB0370100DEBEA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A32E4171BB0FDAF0012FF60 /* BIDFourLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDFourLines.h; sourceTree = "<group>"; };
+		8A32E4181BB0FDAF0012FF60 /* BIDFourLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDFourLines.m; sourceTree = "<group>"; };
+		8A32E41F1BB144170012FF60 /* zzzViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zzzViewViewController.h; sourceTree = "<group>"; };
+		8A32E4201BB144170012FF60 /* zzzViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zzzViewViewController.m; sourceTree = "<group>"; };
+		8A32E4211BB144170012FF60 /* zzzViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zzzViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,9 @@
 		8402AEBF1BB0370100DEBEA3 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				8A32E41F1BB144170012FF60 /* zzzViewViewController.h */,
+				8A32E4201BB144170012FF60 /* zzzViewViewController.m */,
+				8A32E4211BB144170012FF60 /* zzzViewViewController.xib */,
 				8402AEC31BB0370100DEBEA3 /* AppDelegate.h */,
 				8402AEC41BB0370100DEBEA3 /* AppDelegate.m */,
 				8402AEC61BB0370100DEBEA3 /* ViewController.h */,
@@ -67,6 +78,8 @@
 				8402AECE1BB0370100DEBEA3 /* LaunchScreen.storyboard */,
 				8402AED11BB0370100DEBEA3 /* Info.plist */,
 				8402AEC01BB0370100DEBEA3 /* Supporting Files */,
+				8A32E4171BB0FDAF0012FF60 /* BIDFourLines.h */,
+				8A32E4181BB0FDAF0012FF60 /* BIDFourLines.m */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -139,6 +152,7 @@
 			files = (
 				8402AED01BB0370100DEBEA3 /* LaunchScreen.storyboard in Resources */,
 				8402AECD1BB0370100DEBEA3 /* Assets.xcassets in Resources */,
+				8A32E4231BB144170012FF60 /* zzzViewViewController.xib in Resources */,
 				8402AECB1BB0370100DEBEA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,7 +166,9 @@
 			files = (
 				8402AEC81BB0370100DEBEA3 /* ViewController.m in Sources */,
 				8402AEC51BB0370100DEBEA3 /* AppDelegate.m in Sources */,
+				8A32E4221BB144170012FF60 /* zzzViewViewController.m in Sources */,
 				8402AEC21BB0370100DEBEA3 /* main.m in Sources */,
+				8A32E4191BB0FDAF0012FF60 /* BIDFourLines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Persistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yu.Persistence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -273,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Persistence/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yu.Persistence;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -299,6 +321,7 @@
 				8402AED61BB0370100DEBEA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

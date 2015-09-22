@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="test2ViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gsk-Y2-qjJ">
+                    <rect key="frame" x="108" y="102" width="46" height="30"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r8W-Iu-6pC">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cKO-fB-dfE">
+                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6IZ-Ke-ZbG">
+                                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="36p-p0-gV8">
+                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VSj-MV-Btb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OIk-Gm-fMy">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="90E-9R-w1e">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                                            <subviews>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tcX-ov-2Hr">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                                                    <subviews>
+                                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HqV-v3-eCm">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                                                            <subviews>
+                                                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnh-Ot-UPF">
+                                                                                                    <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                                                                                    <state key="normal" title="Button"/>
+                                                                                                </button>
+                                                                                            </subviews>
+                                                                                        </stackView>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                            </subviews>
+                                                                            <constraints>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="top" secondItem="90E-9R-w1e" secondAttribute="top" id="4AV-cY-VLv"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="leading" secondItem="90E-9R-w1e" secondAttribute="leading" id="4Ob-Hb-vBG"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="top" secondItem="90E-9R-w1e" secondAttribute="topMargin" id="Adn-Vn-EKE"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="leading" secondItem="90E-9R-w1e" secondAttribute="leading" id="Ig2-WO-Ihs"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="tcX-ov-2Hr" secondAttribute="bottom" id="Rqg-CG-b07"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="leading" secondItem="90E-9R-w1e" secondAttribute="leadingMargin" id="TpX-D3-zpT"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="trailing" secondItem="90E-9R-w1e" secondAttribute="trailingMargin" id="Vb1-7C-EAl"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="tcX-ov-2Hr" secondAttribute="trailing" id="Y3k-lP-AgF"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="centerY" secondItem="90E-9R-w1e" secondAttribute="centerY" id="Zzh-PY-UvY"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="top" secondItem="90E-9R-w1e" secondAttribute="top" id="bUZ-lx-HUI"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="top" secondItem="90E-9R-w1e" secondAttribute="top" id="fWk-U7-nJY"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="tcX-ov-2Hr" secondAttribute="trailing" id="fx4-v9-Vxq"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="tcX-ov-2Hr" secondAttribute="bottom" id="h7N-tz-BuQ"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="leading" secondItem="90E-9R-w1e" secondAttribute="leading" id="hkh-i0-tyi"/>
+                                                                                <constraint firstAttribute="trailing" secondItem="tcX-ov-2Hr" secondAttribute="trailing" id="pDT-e0-vxK"/>
+                                                                                <constraint firstAttribute="bottom" secondItem="tcX-ov-2Hr" secondAttribute="bottom" id="saE-qF-NeR"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="leading" secondItem="90E-9R-w1e" secondAttribute="leading" id="sjH-tB-wFk"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="bottom" secondItem="90E-9R-w1e" secondAttribute="bottomMargin" id="tbC-Hr-mX2"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="top" secondItem="90E-9R-w1e" secondAttribute="top" id="udI-2P-86p"/>
+                                                                                <constraint firstItem="tcX-ov-2Hr" firstAttribute="centerX" secondItem="90E-9R-w1e" secondAttribute="centerX" id="wxw-rI-SEo"/>
+                                                                            </constraints>
+                                                                        </stackView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>
