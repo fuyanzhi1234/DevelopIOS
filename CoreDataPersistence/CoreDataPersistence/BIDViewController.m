@@ -9,14 +9,21 @@
 #import "BIDViewController.h"
 
 @interface BIDViewController ()
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *lineFields;
 
 @end
 
 @implementation BIDViewController
 
+static NSString * const kLineEntityName = @"Line";
+static NSString * const kLineNumberKey = @"lineNumber";
+static NSString * const kLineTextKey = @"lineText";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
