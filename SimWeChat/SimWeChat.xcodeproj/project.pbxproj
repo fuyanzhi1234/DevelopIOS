@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8427F2761BC4E89600356EF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2751BC4E89600356EF3 /* main.m */; };
+		8427F2791BC4E89600356EF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2781BC4E89600356EF3 /* AppDelegate.m */; };
+		8427F27C1BC4E89600356EF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F27B1BC4E89600356EF3 /* ViewController.m */; };
+		8427F27F1BC4E89600356EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427F27D1BC4E89600356EF3 /* Main.storyboard */; };
+		8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2801BC4E89600356EF3 /* Assets.xcassets */; };
+		8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2821BC4E89600356EF3 /* LaunchScreen.storyboard */; };
+		8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F28C1BC4EAA700356EF3 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F28D1BC4EAA700356EF3 /* RootViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8427F29F1BC513F000356EF3 /* WeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F29D1BC513F000356EF3 /* WeChatViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8427F2A01BC513F000356EF3 /* WeChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F29E1BC513F000356EF3 /* WeChatViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8427F2A41BC5190100356EF3 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2A21BC5190100356EF3 /* ContactsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2A31BC5190100356EF3 /* ContactsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8427F2AE1BC51AA700356EF3 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2AC1BC51AA700356EF3 /* MeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2AD1BC51AA700356EF3 /* MeViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8427F2711BC4E89600356EF3 /* SimWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8427F2751BC4E89600356EF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8427F2771BC4E89600356EF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8427F2781BC4E89600356EF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8427F27A1BC4E89600356EF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8427F27B1BC4E89600356EF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8427F27E1BC4E89600356EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8427F2801BC4E89600356EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8427F2831BC4E89600356EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8427F2851BC4E89600356EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8427F28B1BC4EAA700356EF3 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		8427F28C1BC4EAA700356EF3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		8427F28D1BC4EAA700356EF3 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		8427F2931BC4FC4600356EF3 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		8427F29C1BC513F000356EF3 /* WeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatViewController.h; sourceTree = "<group>"; };
+		8427F29D1BC513F000356EF3 /* WeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatViewController.m; sourceTree = "<group>"; };
+		8427F29E1BC513F000356EF3 /* WeChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatViewController.xib; sourceTree = "<group>"; };
+		8427F2A11BC5190100356EF3 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		8427F2A21BC5190100356EF3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		8427F2A31BC5190100356EF3 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		8427F2AB1BC51AA700356EF3 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		8427F2AC1BC51AA700356EF3 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		8427F2AD1BC51AA700356EF3 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
+		8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8427F26E1BC4E89600356EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8427F2681BC4E89600356EF3 = {
+			isa = PBXGroup;
+			children = (
+				8427F2731BC4E89600356EF3 /* SimWeChat */,
+				8427F2721BC4E89600356EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8427F2721BC4E89600356EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8427F2711BC4E89600356EF3 /* SimWeChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8427F2731BC4E89600356EF3 /* SimWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				8427F2921BC4EB0800356EF3 /* View */,
+				8427F2911BC4EAFF00356EF3 /* Model */,
+				8427F2901BC4EAF100356EF3 /* Controller */,
+				8427F2771BC4E89600356EF3 /* AppDelegate.h */,
+				8427F2781BC4E89600356EF3 /* AppDelegate.m */,
+				8427F27A1BC4E89600356EF3 /* ViewController.h */,
+				8427F27B1BC4E89600356EF3 /* ViewController.m */,
+				8427F27D1BC4E89600356EF3 /* Main.storyboard */,
+				8427F2801BC4E89600356EF3 /* Assets.xcassets */,
+				8427F2821BC4E89600356EF3 /* LaunchScreen.storyboard */,
+				8427F2851BC4E89600356EF3 /* Info.plist */,
+				8427F2741BC4E89600356EF3 /* Supporting Files */,
+			);
+			path = SimWeChat;
+			sourceTree = "<group>";
+		};
+		8427F2741BC4E89600356EF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8427F2931BC4FC4600356EF3 /* Global.h */,
+				8427F2751BC4E89600356EF3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8427F2901BC4EAF100356EF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8427F28B1BC4EAA700356EF3 /* RootViewController.h */,
+				8427F28C1BC4EAA700356EF3 /* RootViewController.m */,
+				8427F29C1BC513F000356EF3 /* WeChatViewController.h */,
+				8427F29D1BC513F000356EF3 /* WeChatViewController.m */,
+				8427F2A11BC5190100356EF3 /* ContactsViewController.h */,
+				8427F2A21BC5190100356EF3 /* ContactsViewController.m */,
+				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
+				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
+				8427F2AB1BC51AA700356EF3 /* MeViewController.h */,
+				8427F2AC1BC51AA700356EF3 /* MeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8427F2911BC4EAFF00356EF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8427F2921BC4EB0800356EF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8427F28D1BC4EAA700356EF3 /* RootViewController.xib */,
+				8427F2A31BC5190100356EF3 /* ContactsViewController.xib */,
+				8427F29E1BC513F000356EF3 /* WeChatViewController.xib */,
+				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
+				8427F2AD1BC51AA700356EF3 /* MeViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8427F2701BC4E89600356EF3 /* SimWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8427F2881BC4E89600356EF3 /* Build configuration list for PBXNativeTarget "SimWeChat" */;
+			buildPhases = (
+				8427F26D1BC4E89600356EF3 /* Sources */,
+				8427F26E1BC4E89600356EF3 /* Frameworks */,
+				8427F26F1BC4E89600356EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimWeChat;
+			productName = SimWeChat;
+			productReference = 8427F2711BC4E89600356EF3 /* SimWeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8427F2691BC4E89600356EF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Charlie;
+				TargetAttributes = {
+					8427F2701BC4E89600356EF3 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = HEC3U2XP5S;
+					};
+				};
+			};
+			buildConfigurationList = 8427F26C1BC4E89600356EF3 /* Build configuration list for PBXProject "SimWeChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8427F2681BC4E89600356EF3;
+			productRefGroup = 8427F2721BC4E89600356EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8427F2701BC4E89600356EF3 /* SimWeChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8427F26F1BC4E89600356EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */,
+				8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */,
+				8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */,
+				8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */,
+				8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */,
+				8427F2A01BC513F000356EF3 /* WeChatViewController.xib in Resources */,
+				8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */,
+				8427F27F1BC4E89600356EF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8427F26D1BC4E89600356EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8427F27C1BC4E89600356EF3 /* ViewController.m in Sources */,
+				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,
+				8427F29F1BC513F000356EF3 /* WeChatViewController.m in Sources */,
+				8427F2A41BC5190100356EF3 /* ContactsViewController.m in Sources */,
+				8427F2791BC4E89600356EF3 /* AppDelegate.m in Sources */,
+				8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */,
+				8427F2AE1BC51AA700356EF3 /* MeViewController.m in Sources */,
+				8427F2761BC4E89600356EF3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8427F27D1BC4E89600356EF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8427F27E1BC4E89600356EF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8427F2821BC4E89600356EF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8427F2831BC4E89600356EF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8427F2861BC4E89600356EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8427F2871BC4E89600356EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8427F2891BC4E89600356EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SimWeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.SimWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8427F28A1BC4E89600356EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = SimWeChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = yu.SimWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8427F26C1BC4E89600356EF3 /* Build configuration list for PBXProject "SimWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427F2861BC4E89600356EF3 /* Debug */,
+				8427F2871BC4E89600356EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8427F2881BC4E89600356EF3 /* Build configuration list for PBXNativeTarget "SimWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8427F2891BC4E89600356EF3 /* Debug */,
+				8427F28A1BC4E89600356EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8427F2691BC4E89600356EF3 /* Project object */;
+}
