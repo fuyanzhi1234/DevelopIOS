@@ -15,14 +15,14 @@
 		8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2821BC4E89600356EF3 /* LaunchScreen.storyboard */; };
 		8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F28C1BC4EAA700356EF3 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F28D1BC4EAA700356EF3 /* RootViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		8427F29F1BC513F000356EF3 /* WeChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F29D1BC513F000356EF3 /* WeChatViewController.m */; settings = {ASSET_TAGS = (); }; };
-		8427F2A01BC513F000356EF3 /* WeChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F29E1BC513F000356EF3 /* WeChatViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8427F2A41BC5190100356EF3 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2A21BC5190100356EF3 /* ContactsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2A31BC5190100356EF3 /* ContactsViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8427F2AE1BC51AA700356EF3 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2AC1BC51AA700356EF3 /* MeViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2AD1BC51AA700356EF3 /* MeViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,9 +40,6 @@
 		8427F28C1BC4EAA700356EF3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		8427F28D1BC4EAA700356EF3 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		8427F2931BC4FC4600356EF3 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
-		8427F29C1BC513F000356EF3 /* WeChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatViewController.h; sourceTree = "<group>"; };
-		8427F29D1BC513F000356EF3 /* WeChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatViewController.m; sourceTree = "<group>"; };
-		8427F29E1BC513F000356EF3 /* WeChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatViewController.xib; sourceTree = "<group>"; };
 		8427F2A11BC5190100356EF3 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
 		8427F2A21BC5190100356EF3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
 		8427F2A31BC5190100356EF3 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
@@ -52,6 +49,9 @@
 		8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatTableViewController.h; sourceTree = "<group>"; };
+		8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatTableViewController.m; sourceTree = "<group>"; };
+		8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +114,14 @@
 			children = (
 				8427F28B1BC4EAA700356EF3 /* RootViewController.h */,
 				8427F28C1BC4EAA700356EF3 /* RootViewController.m */,
-				8427F29C1BC513F000356EF3 /* WeChatViewController.h */,
-				8427F29D1BC513F000356EF3 /* WeChatViewController.m */,
 				8427F2A11BC5190100356EF3 /* ContactsViewController.h */,
 				8427F2A21BC5190100356EF3 /* ContactsViewController.m */,
 				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
 				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
 				8427F2AB1BC51AA700356EF3 /* MeViewController.h */,
 				8427F2AC1BC51AA700356EF3 /* MeViewController.m */,
+				8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */,
+				8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -138,7 +138,7 @@
 			children = (
 				8427F28D1BC4EAA700356EF3 /* RootViewController.xib */,
 				8427F2A31BC5190100356EF3 /* ContactsViewController.xib */,
-				8427F29E1BC513F000356EF3 /* WeChatViewController.xib */,
+				8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */,
 				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
 				8427F2AD1BC51AA700356EF3 /* MeViewController.xib */,
 			);
@@ -204,11 +204,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */,
+				8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */,
 				8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */,
 				8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */,
 				8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */,
 				8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */,
-				8427F2A01BC513F000356EF3 /* WeChatViewController.xib in Resources */,
 				8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */,
 				8427F27F1BC4E89600356EF3 /* Main.storyboard in Resources */,
 			);
@@ -222,8 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8427F27C1BC4E89600356EF3 /* ViewController.m in Sources */,
+				8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */,
 				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,
-				8427F29F1BC513F000356EF3 /* WeChatViewController.m in Sources */,
 				8427F2A41BC5190100356EF3 /* ContactsViewController.m in Sources */,
 				8427F2791BC4E89600356EF3 /* AppDelegate.m in Sources */,
 				8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */,
@@ -377,6 +377,7 @@
 				8427F28A1BC4E89600356EF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

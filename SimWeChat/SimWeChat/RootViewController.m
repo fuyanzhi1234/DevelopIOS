@@ -8,7 +8,7 @@
 
 #import "RootViewController.h"
 #import "Global.h"
-#import "WeChatViewController.h"
+#import "WeChatTableViewController.h"
 #import "ContactsViewController.h"
 #import "DiscoverViewController.h"
 #import "MeViewController.h"
@@ -26,29 +26,33 @@
     [self.tabBar setBackgroundColor:DEFAULT_BACKGROUND_COLOR];
     [self.tabBar setTintColor:DEFAULT_GREEN_COLOR];
     
-    WeChatViewController *weChat = [[WeChatViewController alloc] init];
+    WeChatTableViewController *weChat = [[WeChatTableViewController alloc] init];
     weChat.tabBarItem.title = @"消息";
     weChat.tabBarItem.image = [UIImage imageNamed:@"tabbar_wechat"];
     weChat.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_wechat_sel"];
-    [self addChildViewController:weChat];
+    UINavigationController *weChatController = [[UINavigationController alloc] initWithRootViewController:weChat];
+    [self addChildViewController:weChatController];
     
     ContactsViewController *contacts = [[ContactsViewController alloc] init];
     contacts.tabBarItem.title = @"联系人";
     contacts.tabBarItem.image = [UIImage imageNamed:@"tabbar_contacts"];
     contacts.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_contacts_sel"];
-    [self addChildViewController:contacts];
+    UINavigationController *contactsController = [[UINavigationController alloc] initWithRootViewController:contacts];
+    [self addChildViewController:contactsController];
     
     DiscoverViewController *discover = [[DiscoverViewController alloc] init];
     discover.tabBarItem.title = @"发现";
     discover.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
     discover.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discover_sel"];
-    [self addChildViewController:discover];
+    UINavigationController *discoverController = [[UINavigationController alloc] initWithRootViewController:discover];
+    [self addChildViewController:discoverController];
     
     MeViewController *me = [[MeViewController alloc] init];
     me.tabBarItem.title = @"我";
     me.tabBarItem.image = [UIImage imageNamed:@"tabbar_me"];
     me.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_me_sel"];
-    [self addChildViewController:me];
+    UINavigationController *meController = [[UINavigationController alloc] initWithRootViewController:me];
+    [self addChildViewController:meController];
 }
 
 - (void)didReceiveMemoryWarning {
