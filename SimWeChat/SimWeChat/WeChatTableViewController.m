@@ -7,6 +7,7 @@
 //
 
 #import "WeChatTableViewController.h"
+#import "WeChatTableViewCell.h"
 
 @interface WeChatTableViewController ()
 
@@ -27,6 +28,9 @@
     UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tabbar_wechat"] style:UIBarButtonItemStylePlain target:self action:nil];
     [self.navigationItem setRightBarButtonItem:rightBtn];
 //    self.navi
+    
+//    [self.tableView registerClass:[WeChatTableViewCell class] forCellReuseIdentifier:@"WeChatCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"WeChatTableViewCell" bundle:nil] forCellReuseIdentifier:@"WeChatCell"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,24 +41,25 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 1;
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    WeChatTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WeChatCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    [cell setData];
     
     return cell;
 }
-*/
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 63;
+}
 
 /*
 // Override to support conditional editing of the table view.

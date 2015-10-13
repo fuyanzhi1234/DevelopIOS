@@ -23,6 +23,8 @@
 		8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		849791291BCBF1C700B31B7F /* WeChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 849791271BCBF1C700B31B7F /* WeChatTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		8497912A1BCBF1C700B31B7F /* WeChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849791281BCBF1C700B31B7F /* WeChatTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,9 @@
 		8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatTableViewController.h; sourceTree = "<group>"; };
 		8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatTableViewController.m; sourceTree = "<group>"; };
 		8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatTableViewController.xib; sourceTree = "<group>"; };
+		849791261BCBF1C700B31B7F /* WeChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeChatTableViewCell.h; path = Assets.xcassets/WeChatTableViewCell.h; sourceTree = "<group>"; };
+		849791271BCBF1C700B31B7F /* WeChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeChatTableViewCell.m; path = Assets.xcassets/WeChatTableViewCell.m; sourceTree = "<group>"; };
+		849791281BCBF1C700B31B7F /* WeChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WeChatTableViewCell.xib; path = Assets.xcassets/WeChatTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,8 @@
 				8427F2AC1BC51AA700356EF3 /* MeViewController.m */,
 				8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */,
 				8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */,
+				849791261BCBF1C700B31B7F /* WeChatTableViewCell.h */,
+				849791271BCBF1C700B31B7F /* WeChatTableViewCell.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */,
 				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
 				8427F2AD1BC51AA700356EF3 /* MeViewController.xib */,
+				849791281BCBF1C700B31B7F /* WeChatTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */,
 				8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */,
 				8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */,
+				8497912A1BCBF1C700B31B7F /* WeChatTableViewCell.xib in Resources */,
 				8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */,
 				8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */,
 				8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */,
@@ -221,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849791291BCBF1C700B31B7F /* WeChatTableViewCell.m in Sources */,
 				8427F27C1BC4E89600356EF3 /* ViewController.m in Sources */,
 				8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */,
 				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeChatCell" rowHeight="63" id="KGk-i7-Jjw" customClass="WeChatTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-zg-CrN">
+                        <rect key="frame" x="68" y="8" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6Ah-ek-UNf"/>
+                            <constraint firstAttribute="width" constant="55" id="bIZ-h2-7Jm"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="kAU-Mo-vS5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bIZ-h2-7Jm"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxd-YM-0WA">
+                        <rect key="frame" x="68" y="33" width="69" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="69" id="3Pp-OP-ZCd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v9-I0-Qkb">
+                        <rect key="frame" x="290" y="11" width="38" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="38" id="Pdg-re-tTT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabbar_contacts_sel" translatesAutoresizingMaskIntoConstraints="NO" id="i0Y-8c-Hju">
+                        <rect key="frame" x="18" y="11" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Atv-CP-myQ"/>
+                            <constraint firstAttribute="width" constant="40" id="Nt1-Kl-JY1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ifX-zg-CrN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2gV-zm-1kh"/>
+                    <constraint firstItem="i0Y-8c-Hju" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Crl-yE-xdM"/>
+                    <constraint firstItem="3v9-I0-Qkb" firstAttribute="top" secondItem="i0Y-8c-Hju" secondAttribute="top" id="Hbm-aY-cSF"/>
+                    <constraint firstItem="fxd-YM-0WA" firstAttribute="leading" secondItem="i0Y-8c-Hju" secondAttribute="trailing" constant="10" id="Khw-ks-VZI"/>
+                    <constraint firstItem="ifX-zg-CrN" firstAttribute="leading" secondItem="i0Y-8c-Hju" secondAttribute="trailing" constant="10" id="Lsg-Y1-jd7"/>
+                    <constraint firstItem="fxd-YM-0WA" firstAttribute="leading" secondItem="i0Y-8c-Hju" secondAttribute="trailing" constant="60" id="Rfd-Wg-6Ru"/>
+                    <constraint firstItem="fxd-YM-0WA" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="UnQ-0C-DrZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3v9-I0-Qkb" secondAttribute="trailing" constant="10" id="a9R-TW-5nl"/>
+                    <constraint firstItem="fxd-YM-0WA" firstAttribute="top" secondItem="ifX-zg-CrN" secondAttribute="bottom" constant="4" id="mQi-Vv-tBc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3v9-I0-Qkb" secondAttribute="bottom" constant="22" id="s0e-2H-Ib8"/>
+                    <constraint firstItem="i0Y-8c-Hju" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vby-Za-Lr2"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Rfd-Wg-6Ru"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="message" destination="fxd-YM-0WA" id="F4x-eg-rej"/>
+                <outlet property="name" destination="ifX-zg-CrN" id="88U-St-9oX"/>
+                <outlet property="time" destination="3v9-I0-Qkb" id="Pga-pi-BsC"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="328.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tabbar_contacts_sel" width="27" height="23"/>
+    </resources>
+</document>
