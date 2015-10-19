@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="346" height="62"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-zg-CrN">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifX-zg-CrN">
                         <rect key="frame" x="68" y="8" width="55" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="6Ah-ek-UNf"/>
@@ -39,10 +39,10 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v9-I0-Qkb">
-                        <rect key="frame" x="290" y="11" width="38" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v9-I0-Qkb">
+                        <rect key="frame" x="278" y="11" width="50" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="38" id="Pdg-re-tTT"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Pdg-re-tTT"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,6 +60,7 @@
                     <constraint firstItem="ifX-zg-CrN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2gV-zm-1kh"/>
                     <constraint firstItem="i0Y-8c-Hju" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Crl-yE-xdM"/>
                     <constraint firstItem="3v9-I0-Qkb" firstAttribute="top" secondItem="i0Y-8c-Hju" secondAttribute="top" id="Hbm-aY-cSF"/>
+                    <constraint firstItem="3v9-I0-Qkb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ifX-zg-CrN" secondAttribute="trailing" constant="10" id="K5K-FA-9Vz"/>
                     <constraint firstItem="fxd-YM-0WA" firstAttribute="leading" secondItem="i0Y-8c-Hju" secondAttribute="trailing" constant="10" id="Khw-ks-VZI"/>
                     <constraint firstItem="ifX-zg-CrN" firstAttribute="leading" secondItem="i0Y-8c-Hju" secondAttribute="trailing" constant="10" id="Lsg-Y1-jd7"/>
                     <constraint firstItem="fxd-YM-0WA" firstAttribute="leading" secondItem="i0Y-8c-Hju" secondAttribute="trailing" constant="60" id="Rfd-Wg-6Ru"/>
