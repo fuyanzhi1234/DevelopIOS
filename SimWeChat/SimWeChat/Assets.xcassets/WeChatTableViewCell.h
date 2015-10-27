@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeChatData.h"
 
 @interface WeChatTableViewCell : UITableViewCell
 
-- (void)setData;
+- (void)setData:(WeChatData *)data;
 
 @end

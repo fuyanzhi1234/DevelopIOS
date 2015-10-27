@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WeChatTableViewController : UITableViewController
+@interface WeChatTableViewController : UITableViewController <UITableViewDelegate>
 
 @end

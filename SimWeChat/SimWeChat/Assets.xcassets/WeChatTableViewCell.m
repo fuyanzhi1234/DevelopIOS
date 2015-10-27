@@ -27,10 +27,10 @@
     // Configure the view for the selected state
 }
 
-- (void)setData{
-    [self.name setText:@"娇娇宝贝"];
-    [self.message setText:@"你在哪里？"];
-    [self.time setText:@"19:19:00"];
+- (void)setData:(WeChatData *)data{
+    [self.name setText:data.username];
+    [self.message setText:data.lastWord];
+    [self.time setText:data.lastTime];
 }
 
 @end
