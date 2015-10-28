@@ -83,7 +83,7 @@
 #pragma mark - WeChat Data
 - (void)initData {
     _weChatData = [[NSMutableArray alloc] init];
-    for (int index = 0; index < 3; index ++) {
+    for (int index = 0; index < 13; index ++) {
         WeChatData *data = [[WeChatData alloc] init];
         data.username = @"张娇";
         data.lastWord = @"你在哪儿？";

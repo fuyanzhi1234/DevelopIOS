@@ -16,8 +16,6 @@
 		8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2821BC4E89600356EF3 /* LaunchScreen.storyboard */; };
 		8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F28C1BC4EAA700356EF3 /* RootViewController.m */; };
 		8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F28D1BC4EAA700356EF3 /* RootViewController.xib */; };
-		8427F2A41BC5190100356EF3 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2A21BC5190100356EF3 /* ContactsViewController.m */; };
-		8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2A31BC5190100356EF3 /* ContactsViewController.xib */; };
 		8427F2AE1BC51AA700356EF3 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2AC1BC51AA700356EF3 /* MeViewController.m */; };
 		8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2AD1BC51AA700356EF3 /* MeViewController.xib */; };
 		8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */; };
@@ -31,6 +29,10 @@
 		8497912A1BCBF1C700B31B7F /* WeChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 849791281BCBF1C700B31B7F /* WeChatTableViewCell.xib */; };
 		84BB70A91BD92944002CAACD /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB70A61BD92944002CAACD /* YCXMenu.m */; };
 		84BB70AA1BD92944002CAACD /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB70A81BD92944002CAACD /* YCXMenuItem.m */; };
+		84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */; };
+		84C9D35B1BDFA67500B6BCF0 /* ContactsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */; };
+		84C9D35F1BDFA98800B6BCF0 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9D35D1BDFA98800B6BCF0 /* ContactsTableViewCell.m */; };
+		84C9D3601BDFA98800B6BCF0 /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9D35E1BDFA98800B6BCF0 /* ContactsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,9 +52,6 @@
 		8427F28C1BC4EAA700356EF3 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		8427F28D1BC4EAA700356EF3 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
 		8427F2931BC4FC4600356EF3 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
-		8427F2A11BC5190100356EF3 /* ContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
-		8427F2A21BC5190100356EF3 /* ContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
-		8427F2A31BC5190100356EF3 /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		8427F2AB1BC51AA700356EF3 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
 		8427F2AC1BC51AA700356EF3 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
 		8427F2AD1BC51AA700356EF3 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
@@ -75,6 +74,12 @@
 		84BB70A61BD92944002CAACD /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenu.m; path = YCXMenu/YCXMenu.m; sourceTree = "<group>"; };
 		84BB70A71BD92944002CAACD /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCXMenuItem.h; path = YCXMenu/YCXMenuItem.h; sourceTree = "<group>"; };
 		84BB70A81BD92944002CAACD /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenuItem.m; path = YCXMenu/YCXMenuItem.m; sourceTree = "<group>"; };
+		84C9D3571BDFA67500B6BCF0 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewController.xib; sourceTree = "<group>"; };
+		84C9D35C1BDFA98800B6BCF0 /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
+		84C9D35D1BDFA98800B6BCF0 /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
+		84C9D35E1BDFA98800B6BCF0 /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
 		C1C7AE6B8022106BA10064B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,8 +157,7 @@
 				8427F28B1BC4EAA700356EF3 /* RootViewController.h */,
 				8427F28C1BC4EAA700356EF3 /* RootViewController.m */,
 				845DF8DF1BD67F640039C154 /* WeChat */,
-				8427F2A11BC5190100356EF3 /* ContactsViewController.h */,
-				8427F2A21BC5190100356EF3 /* ContactsViewController.m */,
+				84C9D3561BDFA5E200B6BCF0 /* Contacts */,
 				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
 				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
 				8427F2AB1BC51AA700356EF3 /* MeViewController.h */,
@@ -175,10 +179,11 @@
 			isa = PBXGroup;
 			children = (
 				8427F28D1BC4EAA700356EF3 /* RootViewController.xib */,
-				8427F2A31BC5190100356EF3 /* ContactsViewController.xib */,
 				8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */,
 				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
 				8427F2AD1BC51AA700356EF3 /* MeViewController.xib */,
+				84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */,
+				84C9D35E1BDFA98800B6BCF0 /* ContactsTableViewCell.xib */,
 				849791281BCBF1C700B31B7F /* WeChatTableViewCell.xib */,
 				845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */,
 			);
@@ -207,6 +212,17 @@
 				84BB70A81BD92944002CAACD /* YCXMenuItem.m */,
 			);
 			name = YCXMenu;
+			sourceTree = "<group>";
+		};
+		84C9D3561BDFA5E200B6BCF0 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				84C9D3571BDFA67500B6BCF0 /* ContactsTableViewController.h */,
+				84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */,
+				84C9D35C1BDFA98800B6BCF0 /* ContactsTableViewCell.h */,
+				84C9D35D1BDFA98800B6BCF0 /* ContactsTableViewCell.m */,
+			);
+			name = Contacts;
 			sourceTree = "<group>";
 		};
 		8748CE5FBD23E07E5DB5B231 /* Pods */ = {
@@ -278,12 +294,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8427F2A51BC5190100356EF3 /* ContactsViewController.xib in Resources */,
+				84C9D35B1BDFA67500B6BCF0 /* ContactsTableViewController.xib in Resources */,
 				845DF8E41BD67FDA0039C154 /* ChatDialogTableViewController.xib in Resources */,
 				8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */,
 				8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */,
 				8497912A1BCBF1C700B31B7F /* WeChatTableViewCell.xib in Resources */,
 				8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */,
+				84C9D3601BDFA98800B6BCF0 /* ContactsTableViewCell.xib in Resources */,
 				8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */,
 				8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */,
 				8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */,
@@ -336,8 +353,9 @@
 				8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */,
 				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,
 				84BB70AA1BD92944002CAACD /* YCXMenuItem.m in Sources */,
+				84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */,
+				84C9D35F1BDFA98800B6BCF0 /* ContactsTableViewCell.m in Sources */,
 				84BB70A91BD92944002CAACD /* YCXMenu.m in Sources */,
-				8427F2A41BC5190100356EF3 /* ContactsViewController.m in Sources */,
 				8427F2791BC4E89600356EF3 /* AppDelegate.m in Sources */,
 				843BA6A11BDCB3A2003A0310 /* WeChatData.m in Sources */,
 				8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */,

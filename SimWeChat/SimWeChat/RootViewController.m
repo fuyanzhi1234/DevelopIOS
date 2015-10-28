@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "Global.h"
 #import "WeChatTableViewController.h"
-#import "ContactsViewController.h"
+#import "ContactsTableViewController.h"
 #import "DiscoverViewController.h"
 #import "MeViewController.h"
 
@@ -33,7 +33,7 @@
     UINavigationController *weChatController = [[UINavigationController alloc] initWithRootViewController:weChat];
     [self addChildViewController:weChatController];
     
-    ContactsViewController *contacts = [[ContactsViewController alloc] init];
+    ContactsTableViewController *contacts = [[ContactsTableViewController alloc] init];
     contacts.tabBarItem.title = @"联系人";
     contacts.tabBarItem.image = [UIImage imageNamed:@"tabbar_contacts"];
     contacts.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_contacts_sel"];
