@@ -11,6 +11,8 @@
 
 @interface ContactsTableViewController ()
 
+@property (nonatomic) NSMutableArray *section;
+
 @end
 
 @implementation ContactsTableViewController
@@ -26,7 +28,9 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ContactsTableViewCell" bundle:nil] forCellReuseIdentifier:@"ContactsCell"];
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerFooterView"];
-    [self.tableView reloadData];
+    
+    
+    self.section = [@[@"", @"b", @"c", @"d", @"e", @"f", @"g"] mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,19 +42,49 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 2;
+    return _section.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 3;
+    if (section == 0) {
+        return 4;
+    }
+    else {
+        return 3;
+    }
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ContactsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ContactsCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    [cell setData:@"张娇" userImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    if (indexPath.section == 0) {
+        NSString *name = @"";
+        NSString *imageName = @"";
+        if (indexPath.row == 0) {
+            name = @"新的朋友";
+            imageName = @"contacts_addfriend";
+        }
+        else if (indexPath.row == 1) {
+            name = @"群聊";
+            imageName = @"contact_group";
+        }
+        else if (indexPath.row == 2) {
+            name = @"标签";
+            imageName = @"contact_tooltip";
+        }
+        else if (indexPath.row == 3) {
+            name = @"公众号";
+            imageName = @"contacts_public";
+        }
+        [cell setData:name userImage:[UIImage imageNamed:imageName]];
+    }
+    else {
+        NSString *name = [NSString stringWithFormat:@"%@%@", _section[indexPath.section], @"张娇"];
+        [cell setData:name userImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    }
+
     return cell;
 }
 
@@ -59,7 +93,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    if (section >= 0) {
+    if (section > 0) {
         return 22;
     }
     else {
@@ -68,13 +102,19 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UITableViewHeaderFooterView *headFooterView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"headerFooterView"];
-    [headFooterView.textLabel setText:@"xxx"];
-    return headFooterView;
+    if (section == 0) {
+        return nil;
+    }
+    else {
+        UITableViewHeaderFooterView *headFooterView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:@"headerFooterView"];
+        NSString *titleSection = _section[section];
+        [headFooterView.textLabel setText:titleSection];
+        return headFooterView;
+    }
 }
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
-    return [NSArray arrayWithObjects:@"a", @"b", nil];
+    return _section;
 }
 
 /*

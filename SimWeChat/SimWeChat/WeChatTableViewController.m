@@ -92,7 +92,7 @@
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"HH:mm:ss"];
         NSString *currentDateString = [dateFormatter stringFromDate:currentDate];
-        data.lastTime = currentDateString;
+        data.lastTime = currentDateString; 
         [_weChatData addObject:data];
     }
 }
