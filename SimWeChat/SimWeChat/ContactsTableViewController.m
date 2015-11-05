@@ -8,10 +8,13 @@
 
 #import "ContactsTableViewController.h"
 #include "ContactsTableViewCell.h"
+#include "ContactsSearchTableViewController.h"
 
-@interface ContactsTableViewController ()
+@interface ContactsTableViewController () <UISearchBarDelegate>
 
 @property (nonatomic) NSMutableArray *section;
+@property (nonatomic) UISearchController *searchController;
+@property (nonatomic) ContactsSearchTableViewController *searchResultView;
 
 @end
 
@@ -31,11 +34,30 @@
     
     
     self.section = [@[@"", @"b", @"c", @"d", @"e", @"f", @"g"] mutableCopy];
+    
+    [self initSubView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initSubView {
+    _searchResultView = [[ContactsSearchTableViewController alloc] init];
+    _searchController = [[UISearchController alloc] initWithSearchResultsController:_searchResultView];
+    [_searchController.searchBar sizeToFit];
+    [_searchController.searchBar setDelegate:self];
+    [_searchController setSearchResultsUpdater:_searchResultView];
+    [self.tableView setTableHeaderView:_searchController.searchBar];
+    
+    CGSize sizeScreen = [[UIScreen mainScreen] bounds].size;
+    UILabel *footLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, sizeScreen.width, 49)];
+    NSString *footText = [NSString stringWithFormat:@"%lu位联系人", (unsigned long)(_section.count - 1) * 3];
+    [footLabel setTextColor:[UIColor grayColor]];
+    [footLabel setTextAlignment:NSTextAlignmentCenter];
+    [footLabel setText:footText];
+    [self.tableView setTableFooterView:footLabel];
 }
 
 #pragma mark - Table view data source
@@ -176,5 +198,24 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark searchbar delegate
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+//    _searchResultView.friendList = nil;
+}
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    [self.tabBarController.tabBar setHidden:YES];
+    NSLog(@"searchBarTextDidBeginEditing");
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    NSLog(@"searchBarCancelButtonClicked");
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    [self.tabBarController.tabBar setHidden:NO];
+    NSLog(@"searchBarTextDidEndEditing");
+}
 
 @end
