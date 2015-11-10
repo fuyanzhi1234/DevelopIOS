@@ -9,6 +9,7 @@
 #import "ContactsTableViewController.h"
 #include "ContactsTableViewCell.h"
 #include "ContactsSearchTableViewController.h"
+#include "ContactsModel.h"
 
 @interface ContactsTableViewController () <UISearchBarDelegate>
 
@@ -32,15 +33,27 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"ContactsTableViewCell" bundle:nil] forCellReuseIdentifier:@"ContactsCell"];
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerFooterView"];
     
-    
-    self.section = [@[@"", @"b", @"c", @"d", @"e", @"f", @"g"] mutableCopy];
-    
+    [self initData];
     [self initSubView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initData {
+    ContactsModel *contactsModel = [ContactsModel sharedContactsModel];
+    [contactsModel addContact:@"啊，我的神" section:@"A" headImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    [contactsModel addContact:@"亲爱的" section:@"Q" headImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    [contactsModel addContact:@"我要" section:@"W" headImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    [contactsModel addContact:@"我想" section:@"W" headImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    [contactsModel addContact:@"我爱" section:@"W" headImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    [contactsModel addContact:@"张娇" section:@"Z" headImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+    
+    _section = [[NSMutableArray alloc] init];
+    [_section addObject:UITableViewIndexSearch];
+    [_section addObjectsFromArray:[[ContactsModel sharedContactsModel] getSections]];
 }
 
 - (void)initSubView {
@@ -63,17 +76,16 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return _section.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     if (section == 0) {
         return 4;
     }
     else {
-        return 3;
+        NSString *sectionName = _section[section];
+        return [[ContactsModel sharedContactsModel] getContactsCountBySection:sectionName];
     }
 }
 
@@ -103,8 +115,8 @@
         [cell setData:name userImage:[UIImage imageNamed:imageName]];
     }
     else {
-        NSString *name = [NSString stringWithFormat:@"%@%@", _section[indexPath.section], @"张娇"];
-        [cell setData:name userImage:[UIImage imageNamed:@"tabbar_contacts_sel"]];
+        ContactData *data = [[ContactsModel sharedContactsModel] getContactDataBySection:_section[indexPath.section] andIndex:(indexPath.row)];
+        [cell setData:data.name userImage:data.imageHead];
     }
 
     return cell;
@@ -139,9 +151,20 @@
     return _section;
 }
 
+- (NSInteger) tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index {
+    if (index == 0) {
+        [self.tableView scrollRectToVisible:_searchController.searchBar.frame animated:YES];
+//        [UIView animateWithDuration:3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{[self.tableView scrollRectToVisible:_searchController.searchBar.frame animated:NO];} completion:NULL];
+        return -1;
+    }
+    else {
+        return index;
+    }
+}
+
 /*
 // Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+- (BOOL)tableView:(UITableView *)tableView canE		ditRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
