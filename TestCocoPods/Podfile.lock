@@ -1,10 +1,27 @@
 PODS:
+  - MJPhotoBrowser (1.0.2):
+    - SDWebImage
+    - SVProgressHUD
+    - YLGIFImage
   - Reachability (3.0.0)
+  - SBJson (4.0.2)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - SVProgressHUD (1.1)
+  - YLGIFImage (0.11)
 
 DEPENDENCIES:
+  - MJPhotoBrowser (~> 1.0.2)
   - Reachability (~> 3.0.0)
+  - SBJson (~> 4.0.0)
 
 SPEC CHECKSUMS:
+  MJPhotoBrowser: f55e8490231f44a78ca6455105a1c798a142c95f
   Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
+  SBJson: c18691cc18375b14664ff0fec841f8c4faef1934
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  SVProgressHUD: 54de4d9ab38aa3f688da401f5766a5738084e7fb
+  YLGIFImage: c0ae132fe80e5282b2762a97d14e23ba71a748ae
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

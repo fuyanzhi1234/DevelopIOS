@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataDao.h"
 
 @interface BIDViewController : UIViewController
 

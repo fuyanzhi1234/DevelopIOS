@@ -11,11 +11,14 @@
 		8AA446901BB3F69C001C759E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA4468F1BB3F69C001C759E /* AppDelegate.m */; };
 		8AA446931BB3F69C001C759E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446921BB3F69C001C759E /* ViewController.m */; };
 		8AA446961BB3F69C001C759E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA446941BB3F69C001C759E /* Main.storyboard */; };
-		8AA446991BB3F69C001C759E /* CoreDataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446971BB3F69C001C759E /* CoreDataPersistence.xcdatamodeld */; };
 		8AA4469B1BB3F69C001C759E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AA4469A1BB3F69C001C759E /* Assets.xcassets */; };
 		8AA4469E1BB3F69C001C759E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AA4469C1BB3F69C001C759E /* LaunchScreen.storyboard */; };
 		8AA446A81BB3FB4B001C759E /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446A61BB3FB4B001C759E /* BIDViewController.m */; settings = {ASSET_TAGS = (); }; };
 		8AA446A91BB3FB4B001C759E /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AA446A71BB3FB4B001C759E /* BIDViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		8AA446DA1BB91107001C759E /* CoreDataDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446D91BB91107001C759E /* CoreDataDao.m */; settings = {ASSET_TAGS = (); }; };
+		8AA446DF1BB9200C001C759E /* Line+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446DC1BB9200C001C759E /* Line+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		8AA446E01BB9200C001C759E /* Line.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446DE1BB9200C001C759E /* Line.m */; settings = {ASSET_TAGS = (); }; };
+		8AA446E21BB926FA001C759E /* CoreDataPersistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8AA446971BB3F69C001C759E /* CoreDataPersistence.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,12 @@
 		8AA446A51BB3FB4B001C759E /* BIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		8AA446A61BB3FB4B001C759E /* BIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		8AA446A71BB3FB4B001C759E /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDViewController.xib; sourceTree = "<group>"; };
+		8AA446D81BB91107001C759E /* CoreDataDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataDao.h; sourceTree = "<group>"; };
+		8AA446D91BB91107001C759E /* CoreDataDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataDao.m; sourceTree = "<group>"; };
+		8AA446DB1BB9200C001C759E /* Line+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Line+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8AA446DC1BB9200C001C759E /* Line+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Line+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8AA446DD1BB9200C001C759E /* Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Line.h; sourceTree = "<group>"; };
+		8AA446DE1BB9200C001C759E /* Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Line.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,10 @@
 		8AA4468A1BB3F69C001C759E /* CoreDataPersistence */ = {
 			isa = PBXGroup;
 			children = (
+				8AA446DB1BB9200C001C759E /* Line+CoreDataProperties.h */,
+				8AA446DC1BB9200C001C759E /* Line+CoreDataProperties.m */,
+				8AA446DD1BB9200C001C759E /* Line.h */,
+				8AA446DE1BB9200C001C759E /* Line.m */,
 				8AA4468E1BB3F69C001C759E /* AppDelegate.h */,
 				8AA4468F1BB3F69C001C759E /* AppDelegate.m */,
 				8AA446911BB3F69C001C759E /* ViewController.h */,
@@ -74,6 +87,8 @@
 				8AA4469C1BB3F69C001C759E /* LaunchScreen.storyboard */,
 				8AA4469F1BB3F69C001C759E /* Info.plist */,
 				8AA446971BB3F69C001C759E /* CoreDataPersistence.xcdatamodeld */,
+				8AA446D81BB91107001C759E /* CoreDataDao.h */,
+				8AA446D91BB91107001C759E /* CoreDataDao.m */,
 				8AA446A51BB3FB4B001C759E /* BIDViewController.h */,
 				8AA446A61BB3FB4B001C759E /* BIDViewController.m */,
 				8AA446A71BB3FB4B001C759E /* BIDViewController.xib */,
@@ -162,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA446E21BB926FA001C759E /* CoreDataPersistence.xcdatamodeld in Sources */,
+				8AA446DF1BB9200C001C759E /* Line+CoreDataProperties.m in Sources */,
+				8AA446E01BB9200C001C759E /* Line.m in Sources */,
 				8AA446A81BB3FB4B001C759E /* BIDViewController.m in Sources */,
-				8AA446991BB3F69C001C759E /* CoreDataPersistence.xcdatamodeld in Sources */,
+				8AA446DA1BB91107001C759E /* CoreDataDao.m in Sources */,
 				8AA446931BB3F69C001C759E /* ViewController.m in Sources */,
 				8AA446901BB3F69C001C759E /* AppDelegate.m in Sources */,
 				8AA4468D1BB3F69C001C759E /* main.m in Sources */,
@@ -313,6 +331,7 @@
 				8AA446A41BB3F69C001C759E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

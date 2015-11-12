@@ -4,3 +4,4 @@ platform :ios, '6.0'
 
 pod 'Reachability', '~>3.0.0'
 pod 'SBJson', '~>4.0.0'
+pod 'MJPhotoBrowser', '1.0.2'

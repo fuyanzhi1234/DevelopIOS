@@ -9,6 +9,8 @@
 
 #import "BIDViewController.h"
 #import "AppDelegate.h"
+#import "CoreDataDao.h"
+#import "Line.h"
 
 @interface BIDViewController ()
 @property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *lineFields;
@@ -17,6 +19,7 @@
 
 @implementation BIDViewController
 
+Line *line = nil;
 static NSString * const kLineEntityName = @"Line";
 static NSString * const kLineNumberKey = @"lineNumber";
 static NSString * const kLineTextKey = @"lineText";
@@ -24,8 +27,17 @@ static NSString * const kLineTextKey = @"lineText";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [delegate managedObjectContext];
+    line = [[Line alloc] init];
+    NSArray *lines = [line getAll];
+    for (Line *oneLine in lines) {
+        NSInteger lineNum = [oneLine.lineNumber integerValue];
+        NSString *lineText = oneLine.lineText;
+        
+        NSLog(@"lineNum:%ld, lineText:%@", (long)lineNum, lineText);
+    }
+    
+    
+    NSManagedObjectContext *context = [line managedObjectContext];
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:kLineEntityName];
     NSError *error;
     NSArray *objects = [context executeFetchRequest:request error:&error];
@@ -52,8 +64,7 @@ static NSString * const kLineTextKey = @"lineText";
 }
 
 - (void)applicationWillResignActive:(NSNotification *) notification {
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    NSManagedObjectContext *context = [delegate managedObjectContext];
+    NSManagedObjectContext *context = [line managedObjectContext];
     for (int index = 0; index < 4; index ++) {
         UITextField *textField = [self.lineFields objectAtIndex:index];
         if (textField != nil) {
@@ -81,7 +92,7 @@ static NSString * const kLineTextKey = @"lineText";
     }
     
 
-    [delegate saveContext];
+    [line saveContext];
 }
 /*
 #pragma mark - Navigation

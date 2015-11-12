@@ -14,6 +14,9 @@
 		8427F25C1BC4B21900356EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427F25A1BC4B21900356EF3 /* Main.storyboard */; };
 		8427F25E1BC4B21900356EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8427F25D1BC4B21900356EF3 /* Assets.xcassets */; };
 		8427F2611BC4B21900356EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8427F25F1BC4B21900356EF3 /* LaunchScreen.storyboard */; };
+		8ACE21191BF48611008E0389 /* el_capitan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ACE21171BF48611008E0389 /* el_capitan.jpg */; };
+		8ACE211A1BF48611008E0389 /* pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8ACE21181BF48611008E0389 /* pic.jpg */; };
+		8ACE211D1BF48EE8008E0389 /* MJPhotoToolbar+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACE211C1BF48EE8008E0389 /* MJPhotoToolbar+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,10 @@
 		8427F25D1BC4B21900356EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8427F2601BC4B21900356EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8427F2621BC4B21900356EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ACE21171BF48611008E0389 /* el_capitan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = el_capitan.jpg; sourceTree = "<group>"; };
+		8ACE21181BF48611008E0389 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
+		8ACE211B1BF48EE8008E0389 /* MJPhotoToolbar+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MJPhotoToolbar+Test.h"; sourceTree = "<group>"; };
+		8ACE211C1BF48EE8008E0389 /* MJPhotoToolbar+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MJPhotoToolbar+Test.m"; sourceTree = "<group>"; };
 		F039781B3A9ED39F2ADD6457 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +54,7 @@
 		8427F2451BC4B21900356EF3 = {
 			isa = PBXGroup;
 			children = (
+				8ACE21161BF485E4008E0389 /* Resource */,
 				8427F2501BC4B21900356EF3 /* TestCocoPods */,
 				8427F24F1BC4B21900356EF3 /* Products */,
 				A1E2EE0625F957EE46EA9DCD /* Pods */,
@@ -74,6 +82,8 @@
 				8427F25F1BC4B21900356EF3 /* LaunchScreen.storyboard */,
 				8427F2621BC4B21900356EF3 /* Info.plist */,
 				8427F2511BC4B21900356EF3 /* Supporting Files */,
+				8ACE211B1BF48EE8008E0389 /* MJPhotoToolbar+Test.h */,
+				8ACE211C1BF48EE8008E0389 /* MJPhotoToolbar+Test.m */,
 			);
 			path = TestCocoPods;
 			sourceTree = "<group>";
@@ -84,6 +94,15 @@
 				8427F2521BC4B21900356EF3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8ACE21161BF485E4008E0389 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8ACE21171BF48611008E0389 /* el_capitan.jpg */,
+				8ACE21181BF48611008E0389 /* pic.jpg */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 		A1E2EE0625F957EE46EA9DCD /* Pods */ = {
@@ -115,6 +134,7 @@
 				8427F24B1BC4B21900356EF3 /* Frameworks */,
 				8427F24C1BC4B21900356EF3 /* Resources */,
 				6DB8EA3AC1D8BCE2DA795B32 /* Copy Pods Resources */,
+				7A5745C5720D85C2B89A74DF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8427F2611BC4B21900356EF3 /* LaunchScreen.storyboard in Resources */,
+				8ACE21191BF48611008E0389 /* el_capitan.jpg in Resources */,
 				8427F25E1BC4B21900356EF3 /* Assets.xcassets in Resources */,
 				8427F25C1BC4B21900356EF3 /* Main.storyboard in Resources */,
+				8ACE211A1BF48611008E0389 /* pic.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +207,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A5745C5720D85C2B89A74DF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB61BADDA7818355BD986242 /* Check Pods Manifest.lock */ = {
@@ -212,6 +249,7 @@
 				8427F2591BC4B21900356EF3 /* ViewController.m in Sources */,
 				8427F2561BC4B21900356EF3 /* AppDelegate.m in Sources */,
 				8427F2531BC4B21900356EF3 /* main.m in Sources */,
+				8ACE211D1BF48EE8008E0389 /* MJPhotoToolbar+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
