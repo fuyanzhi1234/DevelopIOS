@@ -1,3 +1,6 @@
 source 'https://gitcafe.com/akuandev/Specs.git'
 platform :ios, '6.0'
-pod 'MJPhotoBrowser', '1.0.2'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod ‘YLGIFImage’
+pod 'ALAssetsLibrary-CustomPhotoAlbum'

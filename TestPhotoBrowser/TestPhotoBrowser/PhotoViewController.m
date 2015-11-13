@@ -11,7 +11,7 @@
 #import "MJPhoto.h"
 
 @interface PhotoViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+- (IBAction)showPhoto:(id)sender;
 
 @end
 
@@ -20,19 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
-    browser.currentPhotoIndex = 0;
-    
-    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:1];
-    for (int i = 0; i < 1; i++) {
-        NSString *currentFileId = @"";
-        NSURL *url = [NSURL URLWithString:currentFileId];
-        MJPhoto *photo = [[MJPhoto alloc] init];
-        photo.url = url; // 图片路径
-        [photos addObject:photo];
-    }
-    browser.photos = photos;
-    [browser show];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,4 +37,25 @@
 }
 */
 
+- (IBAction)showPhoto:(id)sender {
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, YES, 0.0);
+    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    
+    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
+    browser.currentPhotoIndex = 0;
+    int photoCount = 5;
+    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:photoCount];
+    for (int i = 0; i < photoCount; i++) {
+//        NSString *currentFileId = @"";
+//        NSURL *url = [NSURL URLWithString:currentFileId];
+        MJPhoto *photo = [[MJPhoto alloc] init];
+        photo.image = [UIImage imageNamed:@"pic.jpg"]; // 图片路径
+        [photos addObject:photo];
+    }
+    browser.photos = photos;
+    [browser show];
+}
 @end
