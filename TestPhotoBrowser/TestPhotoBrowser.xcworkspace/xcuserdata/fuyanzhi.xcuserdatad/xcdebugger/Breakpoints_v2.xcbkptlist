@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Pods/MJPhotoBrowser/MJPhotoBrowser/MJPhotoBrowser/MJPhotoBrowser.m"
-            timestampString = "469031474.415881"
+            timestampString = "468942811.190311"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "-toolbar"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "-photoScrollView"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
