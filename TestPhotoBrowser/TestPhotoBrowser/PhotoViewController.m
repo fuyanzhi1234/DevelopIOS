@@ -11,7 +11,12 @@
 #import "MJPhoto.h"
 
 @interface PhotoViewController ()
+<<<<<<< Updated upstream
 - (IBAction)showPhoto:(id)sender;
+=======
+@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+- (IBAction)showPicture:(id)sender;
+>>>>>>> Stashed changes
 
 @end
 
@@ -20,6 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +46,7 @@
 }
 */
 
+<<<<<<< Updated upstream
 - (IBAction)showPhoto:(id)sender {
     UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, YES, 0.0);
     [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
@@ -56,6 +66,23 @@
         [photos addObject:photo];
     }
     browser.photos = photos;
+=======
+- (IBAction)showPicture:(id)sender {
+    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
+    browser.currentPhotoIndex = 0;
+    
+    NSMutableArray *photos = [NSMutableArray arrayWithCapacity:5];
+    for (int i = 0; i < 5; i++) {
+        NSString *currentFileId = @"107.gif";
+        NSURL *url = [NSURL URLWithString:currentFileId];
+        MJPhoto *photo = [[MJPhoto alloc] init];
+        photo.url = url; // 图片路径
+        photo.image = [UIImage imageNamed:@"107.gif"];
+        [photos addObject:photo];
+    }
+    browser.photos = photos;
+    browser.showSaveBtn = NO;
+>>>>>>> Stashed changes
     [browser show];
 }
 @end
