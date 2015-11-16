@@ -60,7 +60,8 @@
         
         UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
         doubleTap.numberOfTapsRequired = 2;
-        [self addGestureRecognizer:doubleTap];
+        [_imageView setUserInteractionEnabled:YES];
+        [_imageView addGestureRecognizer:doubleTap];
         
         [singleTap requireGestureRecognizerToFail:doubleTap];
     }
@@ -166,20 +167,32 @@
     
     self.contentSize = CGSizeMake(CGRectGetWidth(imageFrame), CGRectGetHeight(imageFrame));
     _imageView.frame = imageFrame;
+    
+    NSLog(@"%lu", (unsigned long)self.frame.size.width);
+    NSLog(@"%lu", (unsigned long)self.frame.size.height);
 }
 
 #pragma mark - UIScrollViewDelegate
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
-    if (_zoomByDoubleTap) {
-        CGFloat insetY = (CGRectGetHeight(self.bounds) - CGRectGetHeight(_imageView.frame))/2;
-        insetY = MAX(insetY, 0.0);
-        if (ABS(_imageView.frame.origin.y - insetY) > 0.5) {
-            CGRect imageViewFrame = _imageView.frame;
-            imageViewFrame = CGRectMake(imageViewFrame.origin.x, insetY, imageViewFrame.size.width, imageViewFrame.size.height);
-            _imageView.frame = imageViewFrame;
-        }
-    }
+//    if (_zoomByDoubleTap) {
+//        CGFloat insetY = (CGRectGetHeight(self.bounds) - CGRectGetHeight(_imageView.frame))/2;
+//        insetY = MAX(insetY, 0.0);
+//        if (ABS(_imageView.frame.origin.y - insetY) > 0.5) {
+//            CGRect imageViewFrame = _imageView.frame;
+//            imageViewFrame = CGRectMake(imageViewFrame.origin.x, insetY, imageViewFrame.size.width, imageViewFrame.size.height);
+//            _imageView.frame = imageViewFrame;
+//        }
+//    }
 	return _imageView;
+}
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView {
+    CGRect imageViewFrame = _imageView.frame;
+    CGRect screenBounds = [UIScreen mainScreen].bounds;
+    if (imageViewFrame.size.height > screenBounds.size.height)
+    { imageViewFrame.origin.y = 0.0f; }
+    else { imageViewFrame.origin.y = (screenBounds.size.height - imageViewFrame.size.height) / 2.0; }
+    _imageView.frame = imageViewFrame;
 }
 
 - (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale{
@@ -213,11 +226,25 @@
 	if (self.zoomScale == self.maximumZoomScale) {
 		[self setZoomScale:self.minimumZoomScale animated:YES];
 	} else {
-        CGPoint touchPoint = [tap locationInView:self];
+        CGPoint touchPoint = [tap locationInView:tap.view];
         CGFloat scale = self.maximumZoomScale/ self.zoomScale;
-        CGRect rectTozoom=CGRectMake(touchPoint.x * scale, touchPoint.y * scale, 1, 1);
+        CGRect rectTozoom= [self zoomRectForScale:scale withCenter:touchPoint];
+//        CGRect rectTozoom = CGRectMake(touchPoint.x * scale, touchPoint.y * scale, self.bounds.size.width, self.bounds.size.height);
         [self zoomToRect:rectTozoom animated:YES];
 	}
+    NSLog(@"contentSize:%lu", (unsigned long)self.contentSize.width);
+    NSLog(@"contentSize:%lu", (unsigned long)self.contentSize.height);
+    NSLog(@"%lu", (unsigned long)_imageView.frame.size.width);
+    NSLog(@"%lu", (unsigned long)self.frame.size.height);
+}
+
+- (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
+    CGRect zoomRect;
+    zoomRect.size.height =self.frame.size.height / scale;
+    zoomRect.size.width  =self.frame.size.width  / scale;
+    zoomRect.origin.x = 1700;//center.x - (zoomRect.size.width  /2.0);
+    zoomRect.origin.y = center.y - (zoomRect.size.height /2.0);
+    return zoomRect;
 }
 
 - (void)dealloc
