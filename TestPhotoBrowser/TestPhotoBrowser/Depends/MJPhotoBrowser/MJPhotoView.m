@@ -63,6 +63,7 @@
         [_imageView setUserInteractionEnabled:YES];
         [_imageView addGestureRecognizer:doubleTap];
         
+        // 防止提前响应单击事件
         [singleTap requireGestureRecognizerToFail:doubleTap];
     }
     return self;
@@ -242,7 +243,7 @@
     CGRect zoomRect;
     zoomRect.size.height =self.frame.size.height / scale;
     zoomRect.size.width  =self.frame.size.width  / scale;
-    zoomRect.origin.x = 1700;//center.x - (zoomRect.size.width  /2.0);
+    zoomRect.origin.x = center.x - (zoomRect.size.width  /2.0);
     zoomRect.origin.y = center.y - (zoomRect.size.height /2.0);
     return zoomRect;
 }
