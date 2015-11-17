@@ -11,6 +11,7 @@
 #import "MBProgressHUD+Add.h"
 #import "ALAssetsLibrary+CustomPhotoAlbum.h"
 
+static const CGFloat SaveBtnOffset = 10.0f;
 
 @interface MJPhotoToolbar()
 {
@@ -37,10 +38,10 @@
     
     if (_photos.count > 1) {
         _indexLabel = [[UILabel alloc] init];
-        _indexLabel.font = [UIFont boldSystemFontOfSize:14];
+        _indexLabel.font = self.labelFont;
         _indexLabel.frame = self.bounds;
         _indexLabel.backgroundColor = [UIColor clearColor];
-        _indexLabel.textColor = [UIColor whiteColor];
+        _indexLabel.textColor = self.labelColor;
         _indexLabel.textAlignment = NSTextAlignmentCenter;
         _indexLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         [_indexLabel.layer setShadowColor:[UIColor blackColor].CGColor];
@@ -52,11 +53,18 @@
     
     // 保存图片按钮
     CGFloat btnWidth = self.bounds.size.height;
+    CGFloat btnX = 0.0;
     _saveImageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    _saveImageBtn.frame = CGRectMake(CGRectGetWidth(self.bounds)-10-btnWidth, 0, btnWidth, btnWidth);
+    if (self.saveBtnPosition == MJPhotoBrowserSaveBtnPositionLeft) {
+        btnX = SaveBtnOffset;
+    }
+    else if (self.saveBtnPosition == MJPhotoBrowserSaveBtnPositionRight) {
+        btnX = CGRectGetWidth(self.bounds) - SaveBtnOffset - btnWidth;
+    }
+    _saveImageBtn.frame = CGRectMake(btnX, 0, btnWidth, btnWidth);
     _saveImageBtn.autoresizingMask = UIViewAutoresizingFlexibleHeight;
-    [_saveImageBtn setImage:[UIImage imageNamed:@"MJPhotoBrowser.bundle/save_icon.png"] forState:UIControlStateNormal];
-    [_saveImageBtn setImage:[UIImage imageNamed:@"MJPhotoBrowser.bundle/save_icon_highlighted.png"] forState:UIControlStateHighlighted];
+    [_saveImageBtn setImage:[UIImage imageNamed:self.saveNormalImage] forState:UIControlStateNormal];
+    [_saveImageBtn setImage:[UIImage imageNamed:self.saveHighlightedImage] forState:UIControlStateHighlighted];
     [_saveImageBtn addTarget:self action:@selector(saveImage) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_saveImageBtn];
 }

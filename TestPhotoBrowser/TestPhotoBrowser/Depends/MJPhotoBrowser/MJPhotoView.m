@@ -47,8 +47,8 @@
 		
 		// 属性
 		self.delegate = self;
-//		self.showsHorizontalScrollIndicator = NO;
-//		self.showsVerticalScrollIndicator = NO;
+		self.showsHorizontalScrollIndicator = NO;
+		self.showsVerticalScrollIndicator = NO;
 		self.decelerationRate = UIScrollViewDecelerationRateFast;
 		self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
@@ -230,7 +230,6 @@
         CGPoint touchPoint = [tap locationInView:tap.view];
         CGFloat scale = self.maximumZoomScale/ self.zoomScale;
         CGRect rectTozoom= [self zoomRectForScale:scale withCenter:touchPoint];
-//        CGRect rectTozoom = CGRectMake(touchPoint.x * scale, touchPoint.y * scale, self.bounds.size.width, self.bounds.size.height);
         [self zoomToRect:rectTozoom animated:YES];
 	}
     NSLog(@"contentSize:%lu", (unsigned long)self.contentSize.width);
@@ -239,6 +238,7 @@
     NSLog(@"%lu", (unsigned long)self.frame.size.height);
 }
 
+// 计算放大的区域
 - (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center {
     CGRect zoomRect;
     zoomRect.size.height =self.frame.size.height / scale;

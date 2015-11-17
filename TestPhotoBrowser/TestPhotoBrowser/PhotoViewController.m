@@ -38,12 +38,6 @@
 */
 
 - (IBAction)showPhoto:(id)sender {
-    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, YES, 0.0);
-    [self.view.layer renderInContext:UIGraphicsGetCurrentContext()];
-    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    
     MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
     browser.currentPhotoIndex = 0;
     int photoCount = 5;
@@ -56,6 +50,10 @@
         [photos addObject:photo];
     }
     browser.photos = photos;
+//    browser.saveBtnPosition = MJPhotoBrowserSaveBtnPositionLeft;
+//    browser.labelColor = [UIColor redColor];
+//    browser.labelFont = [UIFont boldSystemFontOfSize:14];
+//    browser.saveNormalImage = @"pic.jpg";
     [browser show];
 }
 @end

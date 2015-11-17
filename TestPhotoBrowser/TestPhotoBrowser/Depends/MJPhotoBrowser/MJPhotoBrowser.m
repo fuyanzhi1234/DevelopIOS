@@ -7,7 +7,6 @@
 #import "MJPhotoBrowser.h"
 #import "MJPhoto.h"
 #import "MJPhotoView.h"
-#import "MJPhotoToolbar.h"
 #import <SDWebImage/SDWebImagePrefetcher.h>
 
 #define kPadding 10
@@ -29,7 +28,12 @@
 {
     self = [super init];
     if (self) {
-        _showSaveBtn = YES;
+        self.showSaveBtn = YES;
+        self.labelColor = [UIColor whiteColor];
+        self.labelFont = [UIFont boldSystemFontOfSize:14];
+        self.saveNormalImage = @"MJPhotoBrowser.bundle/save_icon.png";
+        self.saveHighlightedImage = @"MJPhotoBrowser.bundle/save_icon_highlighted.png";
+        self.saveBtnPosition = MJPhotoBrowserSaveBtnPositionRight;
     }
     return self;
 }
@@ -66,6 +70,11 @@
         CGFloat barY = self.view.frame.size.height - barHeight;
         _toolbar = [[MJPhotoToolbar alloc] init];
         _toolbar.showSaveBtn = _showSaveBtn;
+        _toolbar.labelColor = _labelColor;
+        _toolbar.labelFont = _labelFont;
+        _toolbar.saveNormalImage = _saveNormalImage;
+        _toolbar.saveHighlightedImage = _saveHighlightedImage;
+        _toolbar.saveBtnPosition = _saveBtnPosition;
         _toolbar.frame = CGRectMake(0, barY, self.view.frame.size.width, barHeight);
         _toolbar.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     }
