@@ -29,6 +29,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.title = @"通讯录";
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ContactsTableViewCell" bundle:nil] forCellReuseIdentifier:@"ContactsCell"];
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"headerFooterView"];
@@ -57,6 +58,11 @@
 }
 
 - (void)initSubView {
+    // addfriend
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"tabbar_wechat"] style:UIBarButtonItemStylePlain target:self action:@selector(showAddFriend)];
+    [self.navigationItem setRightBarButtonItem:rightItem];
+    
+    // searchbar
     _searchResultView = [[ContactsSearchTableViewController alloc] init];
     _searchController = [[UISearchController alloc] initWithSearchResultsController:_searchResultView];
     [_searchController.searchBar sizeToFit];
@@ -64,6 +70,7 @@
     [_searchController setSearchResultsUpdater:_searchResultView];
     [self.tableView setTableHeaderView:_searchController.searchBar];
     
+    // footview
     CGSize sizeScreen = [[UIScreen mainScreen] bounds].size;
     UILabel *footLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, sizeScreen.width, 49)];
     NSString *footText = [NSString stringWithFormat:@"%lu位联系人", (unsigned long)(_section.count - 1) * 3];
@@ -239,6 +246,16 @@
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
     [self.tabBarController.tabBar setHidden:NO];
     NSLog(@"searchBarTextDidEndEditing");
+}
+
+#pragma mark -selector
+// addFriend
+- (void)showAddFriend {
+    UIViewController *viewController = [[UIViewController alloc] init];
+    [viewController.view setBackgroundColor:[UIColor whiteColor]];
+    // 在被push的页面中使用，可以自动隐藏和显示tabBar
+    [viewController setHidesBottomBarWhenPushed:YES];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end
