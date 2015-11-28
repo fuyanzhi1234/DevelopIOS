@@ -138,7 +138,6 @@
 			children = (
 				84D35F531C095AA40061F10D /* Dependence */,
 				84CBD6371BEB80B800F89CCD /* Meta */,
-				8427F2921BC4EB0800356EF3 /* View */,
 				8427F2911BC4EAFF00356EF3 /* Model */,
 				8427F2901BC4EAF100356EF3 /* Controller */,
 				8427F2771BC4E89600356EF3 /* AppDelegate.h */,
@@ -168,12 +167,11 @@
 			children = (
 				8427F28B1BC4EAA700356EF3 /* RootViewController.h */,
 				8427F28C1BC4EAA700356EF3 /* RootViewController.m */,
+				8427F28D1BC4EAA700356EF3 /* RootViewController.xib */,
 				845DF8DF1BD67F640039C154 /* WeChat */,
 				84C9D3561BDFA5E200B6BCF0 /* Contacts */,
-				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
-				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
-				8427F2AB1BC51AA700356EF3 /* MeViewController.h */,
-				8427F2AC1BC51AA700356EF3 /* MeViewController.m */,
+				84D35F5A1C095D060061F10D /* Discovery */,
+				84D35F5B1C095D0F0061F10D /* Me */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -187,31 +185,18 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		8427F2921BC4EB0800356EF3 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				84C9D3611BE0EF0E00B6BCF0 /* WeChatTableViewCell.xib */,
-				8427F28D1BC4EAA700356EF3 /* RootViewController.xib */,
-				8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */,
-				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
-				8427F2AD1BC51AA700356EF3 /* MeViewController.xib */,
-				84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */,
-				84C9D35E1BDFA98800B6BCF0 /* ContactsTableViewCell.xib */,
-				845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */,
-				84CBD6311BEA435D00F89CCD /* ContactsSearchTableViewController.xib */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
 		845DF8DF1BD67F640039C154 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
 				8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */,
 				8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */,
+				8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */,
 				84C9D3631BE0EFAB00B6BCF0 /* WeChatTableViewCell.h */,
 				84C9D3641BE0EFAB00B6BCF0 /* WeChatTableViewCell.m */,
+				84C9D3611BE0EF0E00B6BCF0 /* WeChatTableViewCell.xib */,
 				845DF8E01BD67FDA0039C154 /* ChatDialogTableViewController.h */,
 				845DF8E11BD67FDA0039C154 /* ChatDialogTableViewController.m */,
+				845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */,
 			);
 			name = WeChat;
 			sourceTree = "<group>";
@@ -232,10 +217,13 @@
 			children = (
 				84C9D3571BDFA67500B6BCF0 /* ContactsTableViewController.h */,
 				84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */,
+				84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */,
 				84C9D35C1BDFA98800B6BCF0 /* ContactsTableViewCell.h */,
 				84C9D35D1BDFA98800B6BCF0 /* ContactsTableViewCell.m */,
+				84C9D35E1BDFA98800B6BCF0 /* ContactsTableViewCell.xib */,
 				84CBD62F1BEA435D00F89CCD /* ContactsSearchTableViewController.h */,
 				84CBD6301BEA435D00F89CCD /* ContactsSearchTableViewController.m */,
+				84CBD6311BEA435D00F89CCD /* ContactsSearchTableViewController.xib */,
 			);
 			name = Contacts;
 			sourceTree = "<group>";
@@ -257,6 +245,26 @@
 				84BB70AB1BD9294B002CAACD /* YCXMenu */,
 			);
 			name = Dependence;
+			sourceTree = "<group>";
+		};
+		84D35F5A1C095D060061F10D /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
+				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
+				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		84D35F5B1C095D0F0061F10D /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				8427F2AB1BC51AA700356EF3 /* MeViewController.h */,
+				8427F2AC1BC51AA700356EF3 /* MeViewController.m */,
+				8427F2AD1BC51AA700356EF3 /* MeViewController.xib */,
+			);
+			name = Me;
 			sourceTree = "<group>";
 		};
 		8748CE5FBD23E07E5DB5B231 /* Pods */ = {
