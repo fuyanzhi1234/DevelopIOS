@@ -25,8 +25,6 @@
 		845DF8E41BD67FDA0039C154 /* ChatDialogTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */; };
 		8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */; };
 		8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */; };
-		84BB70A91BD92944002CAACD /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB70A61BD92944002CAACD /* YCXMenu.m */; };
-		84BB70AA1BD92944002CAACD /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BB70A81BD92944002CAACD /* YCXMenuItem.m */; };
 		84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */; };
 		84C9D35B1BDFA67500B6BCF0 /* ContactsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */; };
 		84C9D35F1BDFA98800B6BCF0 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9D35D1BDFA98800B6BCF0 /* ContactsTableViewCell.m */; };
@@ -37,6 +35,8 @@
 		84CBD6331BEA435D00F89CCD /* ContactsSearchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CBD6311BEA435D00F89CCD /* ContactsSearchTableViewController.xib */; };
 		84CBD6361BEB7C6B00F89CCD /* ContactsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6351BEB7C6B00F89CCD /* ContactsModel.m */; };
 		84CBD63A1BEB80D200F89CCD /* ContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6391BEB80D200F89CCD /* ContactData.m */; };
+		84D35F581C095ABC0061F10D /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D35F551C095ABC0061F10D /* YCXMenu.m */; };
+		84D35F591C095ABC0061F10D /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D35F571C095ABC0061F10D /* YCXMenuItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,10 +71,6 @@
 		8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatTableViewController.m; sourceTree = "<group>"; };
 		8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatTableViewController.xib; sourceTree = "<group>"; };
 		84BB70A11BD927BE002CAACD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		84BB70A51BD92944002CAACD /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCXMenu.h; path = YCXMenu/YCXMenu.h; sourceTree = "<group>"; };
-		84BB70A61BD92944002CAACD /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenu.m; path = YCXMenu/YCXMenu.m; sourceTree = "<group>"; };
-		84BB70A71BD92944002CAACD /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCXMenuItem.h; path = YCXMenu/YCXMenuItem.h; sourceTree = "<group>"; };
-		84BB70A81BD92944002CAACD /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenuItem.m; path = YCXMenu/YCXMenuItem.m; sourceTree = "<group>"; };
 		84C9D3571BDFA67500B6BCF0 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
 		84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
 		84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +87,10 @@
 		84CBD6351BEB7C6B00F89CCD /* ContactsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsModel.m; sourceTree = "<group>"; };
 		84CBD6381BEB80D200F89CCD /* ContactData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactData.h; sourceTree = "<group>"; };
 		84CBD6391BEB80D200F89CCD /* ContactData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactData.m; sourceTree = "<group>"; };
+		84D35F541C095ABC0061F10D /* YCXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCXMenu.h; path = Dependence/YCXMenu/YCXMenu.h; sourceTree = "<group>"; };
+		84D35F551C095ABC0061F10D /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenu.m; path = Dependence/YCXMenu/YCXMenu.m; sourceTree = "<group>"; };
+		84D35F561C095ABC0061F10D /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCXMenuItem.h; path = Dependence/YCXMenu/YCXMenuItem.h; sourceTree = "<group>"; };
+		84D35F571C095ABC0061F10D /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenuItem.m; path = Dependence/YCXMenu/YCXMenuItem.m; sourceTree = "<group>"; };
 		C1C7AE6B8022106BA10064B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,8 +136,8 @@
 		8427F2731BC4E89600356EF3 /* SimWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				84D35F531C095AA40061F10D /* Dependence */,
 				84CBD6371BEB80B800F89CCD /* Meta */,
-				84BB70AB1BD9294B002CAACD /* YCXMenu */,
 				8427F2921BC4EB0800356EF3 /* View */,
 				8427F2911BC4EAFF00356EF3 /* Model */,
 				8427F2901BC4EAF100356EF3 /* Controller */,
@@ -219,10 +219,10 @@
 		84BB70AB1BD9294B002CAACD /* YCXMenu */ = {
 			isa = PBXGroup;
 			children = (
-				84BB70A51BD92944002CAACD /* YCXMenu.h */,
-				84BB70A61BD92944002CAACD /* YCXMenu.m */,
-				84BB70A71BD92944002CAACD /* YCXMenuItem.h */,
-				84BB70A81BD92944002CAACD /* YCXMenuItem.m */,
+				84D35F541C095ABC0061F10D /* YCXMenu.h */,
+				84D35F551C095ABC0061F10D /* YCXMenu.m */,
+				84D35F561C095ABC0061F10D /* YCXMenuItem.h */,
+				84D35F571C095ABC0061F10D /* YCXMenuItem.m */,
 			);
 			name = YCXMenu;
 			sourceTree = "<group>";
@@ -249,6 +249,14 @@
 				84CBD6391BEB80D200F89CCD /* ContactData.m */,
 			);
 			name = Meta;
+			sourceTree = "<group>";
+		};
+		84D35F531C095AA40061F10D /* Dependence */ = {
+			isa = PBXGroup;
+			children = (
+				84BB70AB1BD9294B002CAACD /* YCXMenu */,
+			);
+			name = Dependence;
 			sourceTree = "<group>";
 		};
 		8748CE5FBD23E07E5DB5B231 /* Pods */ = {
@@ -379,10 +387,8 @@
 				8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */,
 				84CBD6361BEB7C6B00F89CCD /* ContactsModel.m in Sources */,
 				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,
-				84BB70AA1BD92944002CAACD /* YCXMenuItem.m in Sources */,
 				84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */,
 				84C9D35F1BDFA98800B6BCF0 /* ContactsTableViewCell.m in Sources */,
-				84BB70A91BD92944002CAACD /* YCXMenu.m in Sources */,
 				8427F2791BC4E89600356EF3 /* AppDelegate.m in Sources */,
 				84CBD63A1BEB80D200F89CCD /* ContactData.m in Sources */,
 				84C9D3651BE0EFAB00B6BCF0 /* WeChatTableViewCell.m in Sources */,
@@ -390,6 +396,8 @@
 				8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */,
 				845DF8E31BD67FDA0039C154 /* ChatDialogTableViewController.m in Sources */,
 				8427F2AE1BC51AA700356EF3 /* MeViewController.m in Sources */,
+				84D35F581C095ABC0061F10D /* YCXMenu.m in Sources */,
+				84D35F591C095ABC0061F10D /* YCXMenuItem.m in Sources */,
 				8427F2761BC4E89600356EF3 /* main.m in Sources */,
 				84CBD6321BEA435D00F89CCD /* ContactsSearchTableViewController.m in Sources */,
 			);
