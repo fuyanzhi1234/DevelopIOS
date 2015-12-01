@@ -17,10 +17,12 @@
 @property (assign, nonatomic) bool circleAnimate;
 @property (strong, nonatomic) UIColor *circleProgressColor;
 @property (strong, nonatomic) UIColor *circleBackgroundColor;
+@property (strong, nonatomic) UIColor *percentTitleColor;
 @property (assign, nonatomic) CGFloat circleProgressLineWidth;
 @property (assign, nonatomic) CGFloat circleBackgroundLineWidth;
-@property (copy, nonatomic) NSString *title;
 
+
+- (void)setTitle:(NSString *)title percent:(NSString *)percent;
 - (void)animate;
 
 @end

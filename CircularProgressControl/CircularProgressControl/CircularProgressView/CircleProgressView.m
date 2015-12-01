@@ -111,48 +111,43 @@
     self.progressLayer.circleBackgroundLineWidth = circleBackgroundLineWidth;
 }
 
-- (void)setTintColor:(UIColor *)tintColor {
-    self.progressLayer.circleProgressColor = tintColor;
-    self.progressLabel.textColor = tintColor;
+- (void)setPercentTitleColor:(UIColor *)percentTitleColor {
+    self.progressLabel.textColor = percentTitleColor;
 }
 
-- (void)animate {
-    [self.progressLayer animate];
-}
-
-- (void)setTitle:(NSString *)title {
-    _title = title;
-    
-    NSString *progressString = [NSString stringWithFormat:@"%lu%%", (unsigned long)(_circleEndPercent * 100)];
-    
+- (void)setTitle:(NSString *)title percent:(NSString *)percent {
     NSMutableAttributedString *attributedString;
-    
     
     if (title.length > 0) {
         
-        attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n%@", progressString, _title]];
+        attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n%@", percent, title]];
         
         [attributedString addAttributes:@{
-                                        NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Bold" size:40]}
-                                range:NSMakeRange(0, progressString.length)];
+                                        NSFontAttributeName: [UIFont systemFontOfSize:36]}
+                                range:NSMakeRange(0, percent.length)];
         
         [attributedString addAttributes:@{
-                                        NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-thin" size:18]}
-                                range:NSMakeRange(progressString.length+1, _title.length)];
+                                        NSFontAttributeName: [UIFont systemFontOfSize:12]}
+                                range:NSMakeRange(percent.length+1, title.length)];
         
     }
     else
     {
-        attributedString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@",progressString]];
+        attributedString = [[NSMutableAttributedString alloc] initWithString:@""];
         
         [attributedString addAttributes:@{
-                                        NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Bold" size:18]}
-                                range:NSMakeRange(0, progressString.length)];
+                                        NSFontAttributeName: [UIFont systemFontOfSize:36]}
+                                range:NSMakeRange(0, percent.length)];
     }
     
     self.progressLabel.attributedText = attributedString;
 //    _progressLabel.text = @"xxx";
 }
 
+#pragma mark - Public Methods
+
+- (void)animate {
+    [self.progressLayer animate];
+}
 
 @end

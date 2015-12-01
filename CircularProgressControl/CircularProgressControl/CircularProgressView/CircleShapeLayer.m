@@ -25,10 +25,10 @@
     {
         _circleBeginPercent = 0.0;
         _circleEndPercent = 0.0;
-        _circleProgressColor = [UIColor colorWithRed:0.86f green:0.86f blue:0.86f alpha:0.4f];
-        _circleBackgroundColor = [UIColor whiteColor];
-        _circleProgressLineWidth = 2.0;
-        _circleBackgroundLineWidth = 4.0;
+        _circleProgressColor = [UIColor yellowColor];
+        _circleBackgroundColor = [UIColor colorWithRed:0.86f green:0.86f blue:0.86f alpha:0.4f];
+        _circleProgressLineWidth = 4.0;
+        _circleBackgroundLineWidth = 2.0;
         
         [self setupLayer];
     }
@@ -47,14 +47,14 @@
     
     self.path = [self drawPathWithArcCenter];
     self.fillColor = [UIColor clearColor].CGColor;
-    self.strokeColor = _circleProgressColor.CGColor;
-    self.lineWidth = _circleProgressLineWidth;
+    self.strokeColor = _circleBackgroundColor.CGColor;
+    self.lineWidth = _circleBackgroundLineWidth;
     
     self.progressLayer = [CAShapeLayer layer];
     self.progressLayer.path = [self drawPathWithArcCenter];
     self.progressLayer.fillColor = [UIColor clearColor].CGColor;
-    self.progressLayer.strokeColor = _circleBackgroundColor.CGColor;
-    self.progressLayer.lineWidth = _circleBackgroundLineWidth;
+    self.progressLayer.strokeColor = _circleProgressColor.CGColor;
+    self.progressLayer.lineWidth = _circleProgressLineWidth;
     self.progressLayer.strokeEnd = _circleEndPercent;
     self.progressLayer.lineCap = kCALineCapRound;
     self.progressLayer.lineJoin = kCALineJoinRound;
