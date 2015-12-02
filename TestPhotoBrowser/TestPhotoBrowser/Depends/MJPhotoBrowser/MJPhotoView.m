@@ -75,11 +75,25 @@
 }
 
 
-#pragma mark - photoSetter
+#pragma mark - Setter
 - (void)setPhoto:(MJPhoto *)photo {
     _photo = photo;
     
     [self showImage];
+}
+
+- (void)setFailedImageName:(NSString *)failedImageName {
+    _failedImageName = failedImageName;
+    if (_photoLoadingView) {
+        _photoLoadingView.failedImageName = failedImageName;
+    }
+}
+
+- (void)setFailedText:(NSString *)failedText {
+    _failedText = failedText;
+    if (_photoLoadingView) {
+        _photoLoadingView.failedText = failedText;
+    }
 }
 
 #pragma mark 显示图片
@@ -168,9 +182,6 @@
     
     self.contentSize = CGSizeMake(CGRectGetWidth(imageFrame), CGRectGetHeight(imageFrame));
     _imageView.frame = imageFrame;
-    
-    NSLog(@"%lu", (unsigned long)self.frame.size.width);
-    NSLog(@"%lu", (unsigned long)self.frame.size.height);
 }
 
 #pragma mark - UIScrollViewDelegate

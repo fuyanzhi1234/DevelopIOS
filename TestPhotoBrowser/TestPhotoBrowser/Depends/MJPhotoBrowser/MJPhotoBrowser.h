@@ -26,7 +26,15 @@
 @property (copy, nonatomic) NSString *saveHighlightedImage;
 // 保存按钮位置
 @property (assign, nonatomic) MJPhotoBrowserSaveBtnPosition saveBtnPosition;
+/**
+ *  加载失败后展示的图片
+ */
+@property (copy, nonatomic) NSString *failedImageName;
 
+/**
+ *  加载失败后展示的文字
+ */
+@property (strong, nonatomic) NSString *failedText;
 // 显示
 - (void)show;
 

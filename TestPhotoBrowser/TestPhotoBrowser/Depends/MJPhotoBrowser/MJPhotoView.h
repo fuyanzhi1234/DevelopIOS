@@ -20,4 +20,14 @@
 // 代理
 @property (nonatomic, strong) id<MJPhotoViewDelegate> photoViewDelegate;
 
+/**
+ *  加载失败后展示的图片
+ */
+@property (copy, nonatomic) NSString *failedImageName;
+
+/**
+ *  加载失败后展示的文字
+ */
+@property (strong, nonatomic) NSString *failedText;
+
 @end

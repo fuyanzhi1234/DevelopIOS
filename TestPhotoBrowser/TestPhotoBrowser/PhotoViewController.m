@@ -43,13 +43,16 @@
     int photoCount = 5;
     NSMutableArray *photos = [NSMutableArray arrayWithCapacity:photoCount];
     for (int i = 0; i < photoCount; i++) {
-//        NSString *currentFileId = @"";
-//        NSURL *url = [NSURL URLWithString:currentFileId];
+        NSString *currentFileId = @"";
+        NSURL *url = [NSURL URLWithString:currentFileId];
         MJPhoto *photo = [[MJPhoto alloc] init];
-        photo.image = [UIImage imageNamed:@"pic.jpg"]; // 图片路径
+        photo.url = url;
+//        photo.image = [UIImage imageNamed:@"pic.jpg"]; // 图片路径
         [photos addObject:photo];
     }
     browser.photos = photos;
+    browser.failedText = @"图片加载失败，显示小红点啦";
+    browser.failedImageName = @"Image";
 //    browser.saveBtnPosition = MJPhotoBrowserSaveBtnPositionLeft;
 //    browser.labelColor = [UIColor redColor];
 //    browser.labelFont = [UIFont boldSystemFontOfSize:14];

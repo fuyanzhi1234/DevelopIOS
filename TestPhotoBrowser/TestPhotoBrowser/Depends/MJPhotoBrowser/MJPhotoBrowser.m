@@ -22,8 +22,6 @@
 
 @implementation MJPhotoBrowser
 
-#pragma mark - init M
-
 - (instancetype)init
 {
     self = [super init];
@@ -38,7 +36,7 @@
     return self;
 }
 
-#pragma mark - get M
+#pragma mark - Getter
 
 - (UIView *)view{
     if (!_view) {
@@ -81,43 +79,7 @@
     return _toolbar;
 }
 
-- (void)show
-{
-    [[UIApplication sharedApplication].keyWindow endEditing:YES];
-
-    //初始化数据
-    {
-        if (!_visiblePhotoViews) {
-            _visiblePhotoViews = [NSMutableSet set];
-        }
-        if (!_reusablePhotoViews) {
-            _reusablePhotoViews = [NSMutableSet set];
-        }
-        self.toolbar.photos = self.photos;
-        
-        
-        CGRect frame = self.view.bounds;
-        frame.origin.x -= kPadding;
-        frame.size.width += (2 * kPadding);
-        self.photoScrollView.contentSize = CGSizeMake(frame.size.width * self.photos.count, 0);
-        self.photoScrollView.contentOffset = CGPointMake(self.currentPhotoIndex * frame.size.width, 0);
-        
-        [self.view addSubview:self.photoScrollView];
-        [self.view addSubview:self.toolbar];
-        [self updateTollbarState];
-        [self showPhotos];
-    }
-    //渐变显示
-    self.view.alpha = 0;
-    [[UIApplication sharedApplication].keyWindow addSubview:self.view];
-    [UIView animateWithDuration:0.3 animations:^{
-        self.view.alpha = 1.0;
-    } completion:^(BOOL finished) {
-        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-    }];
-}
-
-#pragma mark - set M
+#pragma mark - Setter
 - (void)setPhotos:(NSArray *)photos
 {
     _photos = photos;
@@ -142,7 +104,15 @@
     }
 }
 
-#pragma mark - Show Photos
+- (void)setFailedImageName:(NSString *)failedImageName {
+    _failedImageName = failedImageName;
+}
+
+- (void)setFailedText:(NSString *)failedText {
+    _failedText = failedText;
+}
+
+#pragma mark - Public
 - (void)showPhotos
 {
     CGRect visibleBounds = _photoScrollView.bounds;
@@ -176,6 +146,43 @@
     
 }
 
+- (void)show
+{
+    [[UIApplication sharedApplication].keyWindow endEditing:YES];
+    
+    //初始化数据
+    {
+        if (!_visiblePhotoViews) {
+            _visiblePhotoViews = [NSMutableSet set];
+        }
+        if (!_reusablePhotoViews) {
+            _reusablePhotoViews = [NSMutableSet set];
+        }
+        self.toolbar.photos = self.photos;
+        
+        
+        CGRect frame = self.view.bounds;
+        frame.origin.x -= kPadding;
+        frame.size.width += (2 * kPadding);
+        self.photoScrollView.contentSize = CGSizeMake(frame.size.width * self.photos.count, 0);
+        self.photoScrollView.contentOffset = CGPointMake(self.currentPhotoIndex * frame.size.width, 0);
+        
+        [self.view addSubview:self.photoScrollView];
+        [self.view addSubview:self.toolbar];
+        [self updateTollbarState];
+        [self showPhotos];
+    }
+    //渐变显示
+    self.view.alpha = 0;
+    [[UIApplication sharedApplication].keyWindow addSubview:self.view];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.view.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    }];
+}
+
+#pragma mark - Private
 //  显示一个图片view
 - (void)showPhotoViewAtIndex:(int)index
 {
@@ -183,6 +190,8 @@
     if (!photoView) { // 添加新的图片view
         photoView = [[MJPhotoView alloc] init];
         photoView.photoViewDelegate = self;
+        photoView.failedImageName = _failedImageName;
+        photoView.failedText = _failedText;
     }
     
     // 调整当前页的frame
@@ -239,13 +248,11 @@
     return photoView;
 }
 
-#pragma mark - updateTollbarState
 - (void)updateTollbarState
 {
     _currentPhotoIndex = _photoScrollView.contentOffset.x / _photoScrollView.frame.size.width;
     _toolbar.currentPhotoIndex = _currentPhotoIndex;
 }
-
 
 
 #pragma mark - MJPhotoViewDelegate

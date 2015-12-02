@@ -21,6 +21,14 @@
 
 @implementation MJPhotoLoadingView
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        self.failedImageName = @"MJPhotoBrowser.bundle/save_icon.png";
+        self.failedText = NSLocalizedString(@"mjPhotoBrowser.title.failedText", nil);
+    }
+    return self;
+}
+
 - (void)setFrame:(CGRect)frame
 {
     [super setFrame:[UIScreen mainScreen].bounds];
@@ -31,18 +39,19 @@
     [_progressView removeFromSuperview];
     
     if (!_contentView) {
-        _contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
+        int screenWidth = [UIScreen mainScreen].bounds.size.width;
+        _contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, 200)];
         _contentView.backgroundColor = [UIColor blackColor];
         [self addSubview:_contentView];
         
-        UIImage *image = [UIImage imageNamed:@""];
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake((320-image.size.width)/2.0, 0, image.size.width, image.size.height)];
+        UIImage *image = [UIImage imageNamed:self.failedImageName];
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake((screenWidth - image.size.width)/2.0, 0, image.size.width, image.size.height)];
         imageView.image = image;
         [_contentView addSubview:imageView];
         
-        NSString *str = @"图片加载失败";
-        CGSize size = [str sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(320, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imageView.frame)+15, 320, size.height)];
+        NSString *str = self.failedText;
+        CGSize size = [str sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(screenWidth, MAXFLOAT) lineBreakMode:NSLineBreakByWordWrapping];
+        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(imageView.frame)+15, screenWidth, size.height)];
         label.textAlignment = NSTextAlignmentCenter;
         label.text = str;
         label.textColor = [UIColor colorWithWhite:1.0 alpha:0.75];
