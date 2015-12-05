@@ -35,9 +35,6 @@
     [super layoutSubviews];
     
     self.progressLayer.frame = self.bounds;
-    
-    [self.progressLabel sizeToFit];
-    self.progressLabel.center = CGPointMake(self.center.x - self.frame.origin.x, self.center.y- self.frame.origin.y);
 }
 
 - (void)updateConstraints {

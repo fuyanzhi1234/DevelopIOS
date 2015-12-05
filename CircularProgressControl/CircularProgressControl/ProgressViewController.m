@@ -31,7 +31,10 @@
 #pragma mark - User Interaction
 
 - (IBAction)actionButtonClick:(id)sender {
-    
+    self.xxx.circleBeginPercent = 0.5;
+    self.xxx.circleEndPercent = 1.0;
+    [self.xxx setTitle:@"进度" percent:@"100%"];
+    [self.xxx animate];
 }
 
 
