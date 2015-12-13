@@ -1,10 +1,19 @@
 PODS:
+  - Masonry (0.6.3)
   - Reachability (3.0.0)
+  - Reveal-iOS-SDK (1.0.6)
+  - WZLBadge (1.2.1)
 
 DEPENDENCIES:
+  - Masonry (~> 0.6.3)
   - Reachability (~> 3.0.0)
+  - Reveal-iOS-SDK
+  - WZLBadge (~> 1.2.1)
 
 SPEC CHECKSUMS:
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
+  Reveal-iOS-SDK: 5c06829ab290f1314d15c0f66aaa572fd2342c81
+  WZLBadge: b6034017a0714454682c9d9ab4fac33c99fcc9a8
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

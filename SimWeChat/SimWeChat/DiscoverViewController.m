@@ -7,8 +7,10 @@
 //
 
 #import "DiscoverViewController.h"
+#include "SettingTableView.h"
 
 @interface DiscoverViewController ()
+@property (weak, nonatomic) IBOutlet SettingTableView *settingsTableView;
 
 @end
 
@@ -17,6 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    SettingTableRowData *rowData = [self.settingsTableView.data rowDataWithTitle:@"朋友圈"];
+    rowData.detailImageName = @"contact_tooltip";
+    rowData.detail = @"这是啥";
+    rowData.hasUnreadMsg = YES;
 }
 
 - (void)didReceiveMemoryWarning {

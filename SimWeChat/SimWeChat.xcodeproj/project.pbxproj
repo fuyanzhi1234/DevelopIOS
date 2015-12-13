@@ -25,6 +25,10 @@
 		845DF8E41BD67FDA0039C154 /* ChatDialogTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */; };
 		8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */; };
 		8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */; };
+		847A008F1C1C456C00154946 /* SettingTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A008A1C1C456C00154946 /* SettingTableData.m */; };
+		847A00901C1C456C00154946 /* SettingTableRowData.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A008C1C1C456C00154946 /* SettingTableRowData.m */; };
+		847A00911C1C456C00154946 /* SettingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A008E1C1C456C00154946 /* SettingTableView.m */; };
+		847A00931C1C465B00154946 /* DiscoverySettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 847A00921C1C465B00154946 /* DiscoverySettings.plist */; };
 		84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */; };
 		84C9D35B1BDFA67500B6BCF0 /* ContactsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C9D3591BDFA67500B6BCF0 /* ContactsTableViewController.xib */; };
 		84C9D35F1BDFA98800B6BCF0 /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9D35D1BDFA98800B6BCF0 /* ContactsTableViewCell.m */; };
@@ -37,6 +41,7 @@
 		84CBD63A1BEB80D200F89CCD /* ContactData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CBD6391BEB80D200F89CCD /* ContactData.m */; };
 		84D35F581C095ABC0061F10D /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D35F551C095ABC0061F10D /* YCXMenu.m */; };
 		84D35F591C095ABC0061F10D /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D35F571C095ABC0061F10D /* YCXMenuItem.m */; };
+		84D399921C1DA93D00355783 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D399911C1DA93D00355783 /* SettingsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +75,13 @@
 		8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatTableViewController.h; sourceTree = "<group>"; };
 		8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatTableViewController.m; sourceTree = "<group>"; };
 		8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeChatTableViewController.xib; sourceTree = "<group>"; };
+		847A00891C1C456C00154946 /* SettingTableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingTableData.h; path = Dependence/TabelSettings/SettingTableData.h; sourceTree = "<group>"; };
+		847A008A1C1C456C00154946 /* SettingTableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingTableData.m; path = Dependence/TabelSettings/SettingTableData.m; sourceTree = "<group>"; };
+		847A008B1C1C456C00154946 /* SettingTableRowData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingTableRowData.h; path = Dependence/TabelSettings/SettingTableRowData.h; sourceTree = "<group>"; };
+		847A008C1C1C456C00154946 /* SettingTableRowData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingTableRowData.m; path = Dependence/TabelSettings/SettingTableRowData.m; sourceTree = "<group>"; };
+		847A008D1C1C456C00154946 /* SettingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingTableView.h; path = Dependence/TabelSettings/SettingTableView.h; sourceTree = "<group>"; };
+		847A008E1C1C456C00154946 /* SettingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingTableView.m; path = Dependence/TabelSettings/SettingTableView.m; sourceTree = "<group>"; };
+		847A00921C1C465B00154946 /* DiscoverySettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DiscoverySettings.plist; sourceTree = "<group>"; };
 		84BB70A11BD927BE002CAACD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		84C9D3571BDFA67500B6BCF0 /* ContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
 		84C9D3581BDFA67500B6BCF0 /* ContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
@@ -91,6 +103,8 @@
 		84D35F551C095ABC0061F10D /* YCXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenu.m; path = Dependence/YCXMenu/YCXMenu.m; sourceTree = "<group>"; };
 		84D35F561C095ABC0061F10D /* YCXMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCXMenuItem.h; path = Dependence/YCXMenu/YCXMenuItem.h; sourceTree = "<group>"; };
 		84D35F571C095ABC0061F10D /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenuItem.m; path = Dependence/YCXMenu/YCXMenuItem.m; sourceTree = "<group>"; };
+		84D399901C1DA93D00355783 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewCell.h; path = Dependence/TabelSettings/SettingsTableViewCell.h; sourceTree = "<group>"; };
+		84D399911C1DA93D00355783 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewCell.m; path = Dependence/TabelSettings/SettingsTableViewCell.m; sourceTree = "<group>"; };
 		C1C7AE6B8022106BA10064B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +215,21 @@
 			name = WeChat;
 			sourceTree = "<group>";
 		};
+		847A00881C1C450600154946 /* TableSettings */ = {
+			isa = PBXGroup;
+			children = (
+				84D399901C1DA93D00355783 /* SettingsTableViewCell.h */,
+				84D399911C1DA93D00355783 /* SettingsTableViewCell.m */,
+				847A00891C1C456C00154946 /* SettingTableData.h */,
+				847A008A1C1C456C00154946 /* SettingTableData.m */,
+				847A008B1C1C456C00154946 /* SettingTableRowData.h */,
+				847A008C1C1C456C00154946 /* SettingTableRowData.m */,
+				847A008D1C1C456C00154946 /* SettingTableView.h */,
+				847A008E1C1C456C00154946 /* SettingTableView.m */,
+			);
+			name = TableSettings;
+			sourceTree = "<group>";
+		};
 		84BB70AB1BD9294B002CAACD /* YCXMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +271,7 @@
 		84D35F531C095AA40061F10D /* Dependence */ = {
 			isa = PBXGroup;
 			children = (
+				847A00881C1C450600154946 /* TableSettings */,
 				84BB70AB1BD9294B002CAACD /* YCXMenu */,
 			);
 			name = Dependence;
@@ -253,6 +283,7 @@
 				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
 				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
 				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
+				847A00921C1C465B00154946 /* DiscoverySettings.plist */,
 			);
 			name = Discovery;
 			sourceTree = "<group>";
@@ -288,6 +319,7 @@
 				8427F26E1BC4E89600356EF3 /* Frameworks */,
 				8427F26F1BC4E89600356EF3 /* Resources */,
 				57F644192921C48A89A2F722 /* Copy Pods Resources */,
+				F8B7DB928F1843FF8AC58410 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -338,6 +370,7 @@
 			files = (
 				84C9D35B1BDFA67500B6BCF0 /* ContactsTableViewController.xib in Resources */,
 				845DF8E41BD67FDA0039C154 /* ChatDialogTableViewController.xib in Resources */,
+				847A00931C1C465B00154946 /* DiscoverySettings.plist in Resources */,
 				8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */,
 				8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */,
 				8427F2841BC4E89600356EF3 /* LaunchScreen.storyboard in Resources */,
@@ -384,6 +417,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		F8B7DB928F1843FF8AC58410 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -393,12 +441,16 @@
 			files = (
 				8427F27C1BC4E89600356EF3 /* ViewController.m in Sources */,
 				8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */,
+				84D399921C1DA93D00355783 /* SettingsTableViewCell.m in Sources */,
+				847A00901C1C456C00154946 /* SettingTableRowData.m in Sources */,
 				84CBD6361BEB7C6B00F89CCD /* ContactsModel.m in Sources */,
 				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,
 				84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */,
+				847A008F1C1C456C00154946 /* SettingTableData.m in Sources */,
 				84C9D35F1BDFA98800B6BCF0 /* ContactsTableViewCell.m in Sources */,
 				8427F2791BC4E89600356EF3 /* AppDelegate.m in Sources */,
 				84CBD63A1BEB80D200F89CCD /* ContactData.m in Sources */,
+				847A00911C1C456C00154946 /* SettingTableView.m in Sources */,
 				84C9D3651BE0EFAB00B6BCF0 /* WeChatTableViewCell.m in Sources */,
 				843BA6A11BDCB3A2003A0310 /* WeChatData.m in Sources */,
 				8427F28E1BC4EAA700356EF3 /* RootViewController.m in Sources */,
@@ -521,6 +573,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -548,6 +601,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
