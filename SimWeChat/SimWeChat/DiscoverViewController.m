@@ -9,7 +9,7 @@
 #import "DiscoverViewController.h"
 #include "SettingTableView.h"
 
-@interface DiscoverViewController ()
+@interface DiscoverViewController () <SettingTableViewDelegate>
 @property (weak, nonatomic) IBOutlet SettingTableView *settingsTableView;
 
 @end
@@ -19,15 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
+    self.settingsTableView.settingDelegate = self;
     SettingTableRowData *rowData = [self.settingsTableView.data rowDataWithTitle:@"朋友圈"];
     rowData.detailImageName = @"contact_tooltip";
     rowData.detail = @"这是啥";
     rowData.hasUnreadMsg = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,5 +45,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - SettingTableViewDelegate
+- (void)settingTableView:(SettingTableView *)tableView buttonTappedForTitle:(NSString *)title {
+    SettingTableRowData *rowData = [self.settingsTableView.data rowDataWithTitle:@"朋友圈"];
+    rowData.hasUnreadMsg = YES;
+    [self.settingsTableView reloadData];
+}
 
 @end

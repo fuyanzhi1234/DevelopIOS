@@ -59,16 +59,34 @@
     cell.imageView.image = rowData.image;
     cell.detailImageView.image = rowData.detailImage;
     // 当detailTextLabel和detailImageView同时存在，detailImageView默认在后面
-    if (rowData.title && rowData.detailImageName) {
-        [cell.detailTextLabel mas_makeConstraints:^(MASConstraintMaker *maker) {
-            maker.right.equalTo(cell.detailImageView.mas_left).offset(- DetailImageViewSpacing);
-            maker.centerY.equalTo(cell.contentView.mas_centerY);
-        }];
+    if (rowData.detailImage) {
+        cell.detailImageView.image = rowData.detailImage;
+        if (rowData.detail) {
+            [cell.detailTextLabel mas_makeConstraints:^(MASConstraintMaker *maker) {
+                maker.right.equalTo(cell.detailImageView.mas_left).offset(- DetailImageViewSpacing);
+                maker.centerY.equalTo(cell.contentView.mas_centerY);
+            }];
+        }
+        // 当有未读消息
+        if (rowData.hasUnreadMsg) {
+            [cell.detailImageView showBadge];
+            [cell.detailImageView.badge mas_makeConstraints:^(MASConstraintMaker *maker) {
+                CGFloat badgeWidth = CGRectGetWidth(cell.detailImageView.badge.frame);
+                maker.top.equalTo(cell.detailImageView.mas_top).with.offset(-badgeWidth / 2);
+                maker.right.equalTo(cell.detailImageView.mas_right).with.offset(badgeWidth / 2);
+                maker.width.equalTo([NSNumber numberWithFloat:badgeWidth]);
+                maker.height.equalTo([NSNumber numberWithFloat:badgeWidth]);
+            }];
+        }
+        else {
+            [cell.detailImageView clearBadge];
+        }
     }
-    
-    // 当有未读消息
-    if (rowData.hasUnreadMsg && cell.detailImageView) {
-        [cell.detailImageView showBadge];
+    else {
+        if (cell.detailImageView) {
+            [cell.detailImageView clearBadge];
+            cell.detailImageView = nil;
+        }
     }
     
     if (rowData.image) {
