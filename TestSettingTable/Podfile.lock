@@ -1,0 +1,16 @@
+PODS:
+  - Masonry (0.6.3)
+  - Reveal-iOS-SDK (1.0.6)
+  - WZLBadge (1.2.1)
+
+DEPENDENCIES:
+  - Masonry (~> 0.6.3)
+  - Reveal-iOS-SDK
+  - WZLBadge (~> 1.2.1)
+
+SPEC CHECKSUMS:
+  Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
+  Reveal-iOS-SDK: 5c06829ab290f1314d15c0f66aaa572fd2342c81
+  WZLBadge: b6034017a0714454682c9d9ab4fac33c99fcc9a8
+
+COCOAPODS: 0.39.0

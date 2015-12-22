@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CustomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_head" translatesAutoresizingMaskIntoConstraints="NO" id="JaM-bm-sGs">
+                        <rect key="frame" x="20" y="10" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="1ID-07-S5X"/>
+                            <constraint firstAttribute="width" constant="70" id="cG8-J8-kEm"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寂寞的秋叶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vta-H6-ZeZ">
+                        <rect key="frame" x="110" y="20" width="85" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信号：fuyanzhi1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsY-aB-hJ8">
+                        <rect key="frame" x="110" y="51" width="171" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZsY-aB-hJ8" firstAttribute="leading" secondItem="JaM-bm-sGs" secondAttribute="trailing" constant="20" id="7Yh-OV-Qks"/>
+                    <constraint firstItem="JaM-bm-sGs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8UZ-zj-eEp"/>
+                    <constraint firstItem="Vta-H6-ZeZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Dlm-rI-Uoi"/>
+                    <constraint firstItem="JaM-bm-sGs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Jg5-Lb-uy6"/>
+                    <constraint firstItem="Vta-H6-ZeZ" firstAttribute="leading" secondItem="JaM-bm-sGs" secondAttribute="trailing" constant="20" id="iGZ-Bi-sJJ"/>
+                    <constraint firstItem="ZsY-aB-hJ8" firstAttribute="top" secondItem="Vta-H6-ZeZ" secondAttribute="bottom" constant="10" id="vnC-zg-lcd"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image_head" width="362" height="362"/>
+    </resources>
+</document>
