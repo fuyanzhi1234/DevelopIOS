@@ -30,8 +30,6 @@
 //    </array>
 //    </plist>
 //
-//  Created by Chaos on 15/11/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
 //
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>

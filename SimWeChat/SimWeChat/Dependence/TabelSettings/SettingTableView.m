@@ -1,11 +1,3 @@
-//
-//  SettingTableView.m
-//  TestSettingTable
-//
-//  Created by Chaos on 15/11/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
-//
-
 #import "SettingTableView.h"
 #import "SettingTableData.h"
 #import "SettingTableRowData.h"
@@ -52,6 +44,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 查看cell是否被定制化
+    if ([_settingDelegate respondsToSelector:@selector(settingTableView:cellForRowAtIndexPath:)]) {
+        UITableViewCell *cell = [_settingDelegate settingTableView:tableView cellForRowAtIndexPath:indexPath];
+        if (cell) {
+            return cell;
+        }
+    }
     SettingTableRowData *rowData = [self.data dataForRowAtIndexPath:indexPath];
     SettingsTableViewCell *cell = [self tableView:self newCellForType:rowData.type];
     cell.textLabel.text = NSLocalizedString(rowData.title, nil);
@@ -112,6 +111,17 @@
 }
 
 #pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 查看cell是否被定制化
+    if ([_settingDelegate respondsToSelector:@selector(settingTableView:heightForRowAtIndexPath:)]) {
+        CGFloat height = [_settingDelegate settingTableView:tableView heightForRowAtIndexPath:indexPath];
+        if (height >= 0) {
+            return height;
+        }
+    }
+    return 44.0f;
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

@@ -1,11 +1,3 @@
-//
-//  SettingTableRowData.h
-//  TestSettingTable
-//
-//  Created by Chaos on 15/11/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 

@@ -1,11 +1,3 @@
-//
-//  SettingsTableViewCell.h
-//  TestSettingTable
-//
-//  Created by Charlie on 15/12/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 // 右侧图片与其它控件的最小间距

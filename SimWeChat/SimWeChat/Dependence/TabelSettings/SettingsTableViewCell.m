@@ -1,11 +1,3 @@
-//
-//  SettingsTableViewCell.m
-//  TestSettingTable
-//
-//  Created by Charlie on 15/12/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
-//
-
 #import "SettingsTableViewCell.h"
 #import "Masonry.h"
 

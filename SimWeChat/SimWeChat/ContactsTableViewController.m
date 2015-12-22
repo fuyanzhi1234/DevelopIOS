@@ -248,7 +248,7 @@
     NSLog(@"searchBarTextDidEndEditing");
 }
 
-#pragma mark -selector
+#pragma mark - IBAction
 // addFriend
 - (void)showAddFriend {
     UIViewController *viewController = [[UIViewController alloc] init];

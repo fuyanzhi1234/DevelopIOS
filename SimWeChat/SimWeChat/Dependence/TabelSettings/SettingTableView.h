@@ -1,11 +1,3 @@
-//
-//  SettingTableView.h
-//  TestSettingTable
-//
-//  Created by Chaos on 15/11/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 #import "SettingTableData.h"
 
@@ -38,6 +30,19 @@
  *  @param title     Cell 对应模型的 title
  */
 - (void)settingTableView:(SettingTableView *)tableView accessoryTappedForTitle:(NSString *)title;
+
+
+/**
+ *  定制tableView中的某个cell
+ *
+ *  @param tableView settingTableView
+ *  @param indexPath 位置
+ *
+ *  @return 定制后的cell
+ */
+- (UITableViewCell *)settingTableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+- (CGFloat)settingTableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
 

@@ -1,11 +1,3 @@
-//
-//  SettingTableRowData.m
-//  TestSettingTable
-//
-//  Created by Chaos on 15/11/13.
-//  Copyright © 2015年 Chaos. All rights reserved.
-//
-
 #import "SettingTableRowData.h"
 
 static const NSString *kSettingCellTitle = @"Title";
