@@ -21,6 +21,11 @@
 		8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */; };
 		8427F2B41BC51AD200356EF3 /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */; };
 		843BA6A11BDCB3A2003A0310 /* WeChatData.m in Sources */ = {isa = PBXBuildFile; fileRef = 843BA6A01BDCB3A2003A0310 /* WeChatData.m */; };
+		845998331C2C2A69001ED498 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845998311C2C2A69001ED498 /* ShoppingViewController.m */; };
+		845998341C2C2A69001ED498 /* ShoppingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845998321C2C2A69001ED498 /* ShoppingViewController.xib */; };
+		845998381C2E5F47001ED498 /* ShakeBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 845998371C2E5F47001ED498 /* ShakeBtn.m */; };
+		8459983C1C2E9F3A001ED498 /* ShakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459983A1C2E9F3A001ED498 /* ShakeViewController.m */; };
+		8459983D1C2E9F3A001ED498 /* ShakeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8459983B1C2E9F3A001ED498 /* ShakeViewController.xib */; };
 		845DF8E31BD67FDA0039C154 /* ChatDialogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845DF8E11BD67FDA0039C154 /* ChatDialogTableViewController.m */; };
 		845DF8E41BD67FDA0039C154 /* ChatDialogTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */; };
 		8476A26C1BCA842B00B92C84 /* WeChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */; };
@@ -72,6 +77,14 @@
 		8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
 		843BA69F1BDCB3A2003A0310 /* WeChatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatData.h; sourceTree = "<group>"; };
 		843BA6A01BDCB3A2003A0310 /* WeChatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatData.m; sourceTree = "<group>"; };
+		845998301C2C2A69001ED498 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		845998311C2C2A69001ED498 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
+		845998321C2C2A69001ED498 /* ShoppingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingViewController.xib; sourceTree = "<group>"; };
+		845998361C2E5F47001ED498 /* ShakeBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeBtn.h; sourceTree = "<group>"; };
+		845998371C2E5F47001ED498 /* ShakeBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeBtn.m; sourceTree = "<group>"; };
+		845998391C2E9F3A001ED498 /* ShakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeViewController.h; sourceTree = "<group>"; };
+		8459983A1C2E9F3A001ED498 /* ShakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeViewController.m; sourceTree = "<group>"; };
+		8459983B1C2E9F3A001ED498 /* ShakeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeViewController.xib; sourceTree = "<group>"; };
 		845DF8E01BD67FDA0039C154 /* ChatDialogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDialogTableViewController.h; sourceTree = "<group>"; };
 		845DF8E11BD67FDA0039C154 /* ChatDialogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatDialogTableViewController.m; sourceTree = "<group>"; };
 		845DF8E21BD67FDA0039C154 /* ChatDialogTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatDialogTableViewController.xib; sourceTree = "<group>"; };
@@ -206,6 +219,28 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		8459982F1C2C2A3C001ED498 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
+				845998301C2C2A69001ED498 /* ShoppingViewController.h */,
+				845998311C2C2A69001ED498 /* ShoppingViewController.m */,
+				845998321C2C2A69001ED498 /* ShoppingViewController.xib */,
+			);
+			name = Shopping;
+			sourceTree = "<group>";
+		};
+		8459983E1C2E9F3F001ED498 /* Shake */ = {
+			isa = PBXGroup;
+			children = (
+				845998391C2E9F3A001ED498 /* ShakeViewController.h */,
+				8459983A1C2E9F3A001ED498 /* ShakeViewController.m */,
+				8459983B1C2E9F3A001ED498 /* ShakeViewController.xib */,
+				845998361C2E5F47001ED498 /* ShakeBtn.h */,
+				845998371C2E5F47001ED498 /* ShakeBtn.m */,
+			);
+			name = Shake;
+			sourceTree = "<group>";
+		};
 		845DF8DF1BD67F640039C154 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
@@ -287,6 +322,8 @@
 		84D35F5A1C095D060061F10D /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				8459983E1C2E9F3F001ED498 /* Shake */,
+				8459982F1C2C2A3C001ED498 /* Shopping */,
 				8427F2B01BC51AD200356EF3 /* DiscoverViewController.h */,
 				8427F2B11BC51AD200356EF3 /* DiscoverViewController.m */,
 				8427F2B21BC51AD200356EF3 /* DiscoverViewController.xib */,
@@ -381,6 +418,7 @@
 			files = (
 				84C9D35B1BDFA67500B6BCF0 /* ContactsTableViewController.xib in Resources */,
 				84BA10C21C2673B4008A416A /* MeSettings.plist in Resources */,
+				845998341C2C2A69001ED498 /* ShoppingViewController.xib in Resources */,
 				845DF8E41BD67FDA0039C154 /* ChatDialogTableViewController.xib in Resources */,
 				847A00931C1C465B00154946 /* DiscoverySettings.plist in Resources */,
 				8476A26D1BCA842B00B92C84 /* WeChatTableViewController.xib in Resources */,
@@ -393,6 +431,7 @@
 				8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */,
 				8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */,
 				8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */,
+				8459983D1C2E9F3A001ED498 /* ShakeViewController.xib in Resources */,
 				8427F27F1BC4E89600356EF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +496,7 @@
 				84D399921C1DA93D00355783 /* SettingsTableViewCell.m in Sources */,
 				847A00901C1C456C00154946 /* SettingTableRowData.m in Sources */,
 				84CBD6361BEB7C6B00F89CCD /* ContactsModel.m in Sources */,
+				8459983C1C2E9F3A001ED498 /* ShakeViewController.m in Sources */,
 				8427F2B31BC51AD200356EF3 /* DiscoverViewController.m in Sources */,
 				84C9D35A1BDFA67500B6BCF0 /* ContactsTableViewController.m in Sources */,
 				847A008F1C1C456C00154946 /* SettingTableData.m in Sources */,
@@ -470,8 +510,10 @@
 				845DF8E31BD67FDA0039C154 /* ChatDialogTableViewController.m in Sources */,
 				84BA10C61C267474008A416A /* CustomTableViewCell.m in Sources */,
 				8427F2AE1BC51AA700356EF3 /* MeViewController.m in Sources */,
+				845998331C2C2A69001ED498 /* ShoppingViewController.m in Sources */,
 				84D35F581C095ABC0061F10D /* YCXMenu.m in Sources */,
 				84D35F591C095ABC0061F10D /* YCXMenuItem.m in Sources */,
+				845998381C2E5F47001ED498 /* ShakeBtn.m in Sources */,
 				8427F2761BC4E89600356EF3 /* main.m in Sources */,
 				84CBD6321BEA435D00F89CCD /* ContactsSearchTableViewController.m in Sources */,
 			);
@@ -593,6 +635,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimWeChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -621,6 +664,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimWeChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = yu.SimWeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";

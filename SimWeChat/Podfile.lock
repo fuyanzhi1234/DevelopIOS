@@ -1,16 +1,33 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - Masonry (0.6.3)
   - Reachability (3.0.0)
   - Reveal-iOS-SDK (1.0.6)
   - WZLBadge (1.2.1)
 
 DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
   - Masonry (~> 0.6.3)
   - Reachability (~> 3.0.0)
   - Reveal-iOS-SDK
   - WZLBadge (~> 1.2.1)
 
 SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Masonry: ff105a956abcd19a618b2028b121cb638d7a8e2f
   Reachability: 31e4272bd8378e094beaf6609dc182c85c4e6574
   Reveal-iOS-SDK: 5c06829ab290f1314d15c0f66aaa572fd2342c81

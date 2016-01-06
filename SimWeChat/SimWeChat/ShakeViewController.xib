@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShakeViewController">
+            <connections>
+                <outlet property="upDownDistanceConstraint" destination="Prm-M8-vkM" id="IDu-HB-DqK"/>
+                <outlet property="upYConstraint" destination="lvv-Qh-Eno" id="YH8-Tm-QoJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="switchShakeContent" destination="IUR-cR-Ag7" id="QE3-FA-9Gy"/>
+                <outletCollection property="switchShakeContent" destination="o8T-4S-Tqq" id="473-Op-rQt"/>
+                <outletCollection property="switchShakeContent" destination="l0r-g7-lNR" id="czl-RG-je4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUR-cR-Ag7" customClass="ShakeBtn">
+                    <rect key="frame" x="30" y="530" width="100" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Cwg-Rn-kTH"/>
+                        <constraint firstAttribute="width" constant="100" id="b3T-gO-fKc"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.1128963987" blue="0.087566777260000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="upImageNormal" value="Shake_icon_people"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="upImageHighlight" value="Shake_icon_peopleHL"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="downLabelText" value="人"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="peopleClick:" destination="-1" eventType="touchUpInside" id="gLB-je-MTa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8T-4S-Tqq" customClass="ShakeBtn">
+                    <rect key="frame" x="250" y="530" width="100" height="60"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.1128963987" blue="0.087566777260000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="upImageNormal" value="Shake_icon_music"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="upImageHighlight" value="Shake_icon_musicHL"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="downLabelText" value="歌曲"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="peopleClick:" destination="-1" eventType="touchUpInside" id="tgY-Us-cdA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0r-g7-lNR" customClass="ShakeBtn">
+                    <rect key="frame" x="470" y="530" width="100" height="60"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.1128963987" blue="0.087566777260000006" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="upImageNormal" value="Shake_icon_tv"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="upImageHighlight" value="Shake_icon_tvHL"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="downLabelText" value="电视"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="peopleClick:" destination="-1" eventType="touchUpInside" id="SMF-YS-aCn"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShakeHideImg_women" translatesAutoresizingMaskIntoConstraints="NO" id="UL5-tW-egH">
+                    <rect key="frame" x="140" y="140" width="320" height="320"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake_Logo_Down" translatesAutoresizingMaskIntoConstraints="NO" id="k8T-EH-Ac9">
+                    <rect key="frame" x="225" y="292" width="150" height="82"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shake_Logo_Up" translatesAutoresizingMaskIntoConstraints="NO" id="1Ov-2L-dIk">
+                    <rect key="frame" x="225" y="209" width="150" height="83"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.16491916812703364" green="0.17663480523418351" blue="0.18183092948717949" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="1Ov-2L-dIk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0Vy-l2-YaP"/>
+                <constraint firstItem="l0r-g7-lNR" firstAttribute="height" secondItem="IUR-cR-Ag7" secondAttribute="height" id="19I-Rl-v3q"/>
+                <constraint firstAttribute="bottom" secondItem="o8T-4S-Tqq" secondAttribute="bottom" constant="10" id="3c1-9e-0el"/>
+                <constraint firstItem="l0r-g7-lNR" firstAttribute="width" secondItem="IUR-cR-Ag7" secondAttribute="width" id="FFH-gZ-Ew4"/>
+                <constraint firstItem="IUR-cR-Ag7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="FbG-f1-MuN"/>
+                <constraint firstItem="UL5-tW-egH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LsI-s5-ZT8"/>
+                <constraint firstAttribute="bottom" secondItem="IUR-cR-Ag7" secondAttribute="bottom" constant="10" id="OfX-iN-YYN"/>
+                <constraint firstItem="k8T-EH-Ac9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P9l-ME-The"/>
+                <constraint firstItem="k8T-EH-Ac9" firstAttribute="top" secondItem="1Ov-2L-dIk" secondAttribute="bottom" id="Prm-M8-vkM"/>
+                <constraint firstItem="o8T-4S-Tqq" firstAttribute="width" secondItem="IUR-cR-Ag7" secondAttribute="width" id="SVz-BT-i3J"/>
+                <constraint firstItem="o8T-4S-Tqq" firstAttribute="height" secondItem="IUR-cR-Ag7" secondAttribute="height" id="ZG8-gn-tan"/>
+                <constraint firstAttribute="bottom" secondItem="l0r-g7-lNR" secondAttribute="bottom" constant="10" id="gIf-VD-Vaz"/>
+                <constraint firstItem="1Ov-2L-dIk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-50" id="lvv-Qh-Eno"/>
+                <constraint firstItem="UL5-tW-egH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ohY-oE-6Y4"/>
+                <constraint firstItem="o8T-4S-Tqq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="omd-4u-6co"/>
+                <constraint firstAttribute="trailing" secondItem="l0r-g7-lNR" secondAttribute="trailing" constant="30" id="qvN-b9-Ovm"/>
+            </constraints>
+            <point key="canvasLocation" x="330" y="346"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ShakeHideImg_women" width="320" height="320"/>
+        <image name="Shake_Logo_Down" width="150" height="82"/>
+        <image name="Shake_Logo_Up" width="150" height="83"/>
+        <image name="Shake_icon_music" width="26" height="31"/>
+        <image name="Shake_icon_musicHL" width="26" height="31"/>
+        <image name="Shake_icon_people" width="29" height="29"/>
+        <image name="Shake_icon_peopleHL" width="29" height="29"/>
+        <image name="Shake_icon_tv" width="34" height="28"/>
+        <image name="Shake_icon_tvHL" width="34" height="28"/>
+    </resources>
+</document>

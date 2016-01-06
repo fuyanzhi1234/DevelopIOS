@@ -7,7 +7,9 @@
 //
 
 #import "DiscoverViewController.h"
-#include "SettingTableView.h"
+#import "SettingTableView.h"
+#import "ShoppingViewController.h"
+#import "ShakeViewController.h"
 
 @interface DiscoverViewController () <SettingTableViewDelegate>
 @property (weak, nonatomic) IBOutlet SettingTableView *settingsTableView;
@@ -49,8 +51,19 @@
 #pragma mark - SettingTableViewDelegate
 - (void)settingTableView:(SettingTableView *)tableView buttonTappedForTitle:(NSString *)title {
     SettingTableRowData *rowData = [self.settingsTableView.data rowDataWithTitle:@"朋友圈"];
-    rowData.hasUnreadMsg = YES;
+    rowData.hasUnreadMsg = NO;
     [self.settingsTableView reloadData];
+    if ([title compare:@"购物"] == NSOrderedSame) {
+        ShoppingViewController *viewController = [[ShoppingViewController alloc] init];
+        [viewController setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
+    else if ([title compare:@"摇一摇"] == NSOrderedSame) {
+        ShakeViewController *shakeViewController = [[ShakeViewController alloc] init];
+        [shakeViewController setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:shakeViewController animated:YES];
+    }
 }
+
 
 @end
