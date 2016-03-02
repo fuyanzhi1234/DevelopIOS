@@ -52,15 +52,34 @@ static NSString *kWeatherUrl = @"http://wthrcdn.etouch.cn/weather_mini?citykey=1
     weatherInfo.suggestion = dataWeather[@"ganmao"];
     weatherInfo.city = dataWeather[@"city"];
     
+    // 昨天的天气
+    NSDictionary *forecastYesterdayDetail = (NSDictionary *)dataWeather[@"yesterday"];
+    [self addForecastDetail:forecastYesterdayDetail to:weatherInfo isYesterday:YES];
+
     // 预测的信息
-    NSDictionary *forecastDetail = (NSDictionary *)dataWeather[@"forecast"][0];
-    weatherInfo.windDirection = forecastDetail[@"fengxiang"];
-    weatherInfo.windPower = forecastDetail[@"fengli"];
-    weatherInfo.highestTemprature = forecastDetail[@"high"];
-    weatherInfo.lowestTemprature = forecastDetail[@"low"];
-    weatherInfo.weatherType = forecastDetail[@"type"];
-    weatherInfo.windDirection = forecastDetail[@"fengxiang"];
+    NSArray *forecastDetailArray = dataWeather[@"forecast"];
+    for (NSDictionary *forecastDetail in forecastDetailArray) {
+        [self addForecastDetail:forecastDetail to:weatherInfo isYesterday:NO];
+    }
+
     [_weatherInfoDelegate finishGetWeatherInfo:weatherInfo];
+}
+
+- (void)addForecastDetail:(NSDictionary *)forecastDetail to:(WeatherInfo *)weatherInfo isYesterday:(BOOL)isYesterday{
+    WeatherForecastDetail *forecastdetail = [[WeatherForecastDetail alloc] init];
+    if (isYesterday) {
+        forecastdetail.windDirection = forecastDetail[@"fx"];
+        forecastdetail.windPower = forecastDetail[@"fl"];
+    }
+    else {
+        forecastdetail.windDirection = forecastDetail[@"fengxiang"];
+        forecastdetail.windPower = forecastDetail[@"fengli"];
+    }
+    forecastdetail.highestTemprature = forecastDetail[@"high"];
+    forecastdetail.lowestTemprature = forecastDetail[@"low"];
+    forecastdetail.weatherType = forecastDetail[@"type"];
+    forecastdetail.date = forecastDetail[@"date"];
+    [weatherInfo addForecastDetail:forecastdetail];
 }
 
 @end

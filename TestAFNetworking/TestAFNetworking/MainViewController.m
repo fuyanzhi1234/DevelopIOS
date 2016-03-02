@@ -7,10 +7,12 @@
 //
 
 #import "MainViewController.h"
+#import "WeatherDetailTableViewCell.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *yesterdayTableView;
 @property (weak, nonatomic) IBOutlet UITableView *todayTableView;
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 
 @end
 
@@ -22,6 +24,7 @@ static NSString *const kTableCellIdentify = @"onlyone";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    
     [self.yesterdayTableView registerNib:[UINib nibWithNibName:@"WeatherDetailTableViewCell" bundle:nil] forCellReuseIdentifier:kTableCellIdentify];
     [self.todayTableView registerNib:[UINib nibWithNibName:@"WeatherDetailTableViewCell" bundle:nil] forCellReuseIdentifier:kTableCellIdentify];
     
@@ -32,6 +35,11 @@ static NSString *const kTableCellIdentify = @"onlyone";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.mainScrollView scrollRectToVisible:self.todayTableView.frame animated:NO];
 }
 
 /*
@@ -56,7 +64,7 @@ static NSString *const kTableCellIdentify = @"onlyone";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTableCellIdentify forIndexPath:indexPath];
-    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
 //    [cell.textLabel setText:@"xxx"];
     // Configure the cell...
     
@@ -69,14 +77,14 @@ static NSString *const kTableCellIdentify = @"onlyone";
 
 
 // Override to support conditional editing of the table view.
-//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-//    // Return NO if you do not want the specified item to be editable.
-//    return YES;
-//}
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return NO if you do not want the specified item to be editable.
+    return NO;
+}
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return UITableViewCellEditingStyleDelete;
+    return UITableViewCellEditingStyleNone;
 }
 
 // Override to support editing the table view.
@@ -115,7 +123,38 @@ static NSString *const kTableCellIdentify = @"onlyone";
 #pragma mark - WeatherInfoDelegate
 
 - (void)finishGetWeatherInfo:(WeatherInfo *)weatherInfo {
-    NSLog(@"The city is %@", weatherInfo.city);
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    
+    // 今天天气
+    WeatherDetailTableViewCell *todayCell = (WeatherDetailTableViewCell *)[self.todayTableView cellForRowAtIndexPath:indexPath];
+    WeatherForecastDetail *todayDetail = [weatherInfo getForecastDetailByIndex:TODAY];
+    todayCell.city.text = weatherInfo.city;
+    todayCell.curTemprature.text = weatherInfo.curTemprature;
+    todayCell.suggestion.text = weatherInfo.suggestion;
+    todayCell.date.text = @"今天";
+    [self showForecast:todayCell weatherDorecastDetail:todayDetail];
+    
+    // 昨天天气
+    WeatherDetailTableViewCell *yesterdayCell = (WeatherDetailTableViewCell *)[self.yesterdayTableView cellForRowAtIndexPath:indexPath];
+    WeatherForecastDetail *yesterdayDetail = [weatherInfo getForecastDetailByIndex:YESTERDAY];
+    yesterdayCell.city.text = weatherInfo.city;
+    yesterdayCell.curTemprature.text = @"";
+    yesterdayCell.suggestion.text = @"";
+    yesterdayCell.date.text = @"昨天";
+    [self showForecast:yesterdayCell weatherDorecastDetail:yesterdayDetail];
+}
+
+- (void)showForecast:(WeatherDetailTableViewCell *)curCell weatherDorecastDetail:(WeatherForecastDetail *)detail{
+    if (detail) {
+        curCell.weatherType.text = detail.weatherType;
+        NSString *tempRange = @"";
+        tempRange = [tempRange stringByAppendingFormat:@"%@~%@", 	detail.lowestTemprature, detail.highestTemprature];
+        curCell.tempRange.text = tempRange;
+        NSString *windPower = @"";
+        windPower = [windPower stringByAppendingFormat:@"%@ %@", detail.windPower, detail.windDirection];
+        curCell.windPower.text = windPower;
+    }
+
 }
 
 @end

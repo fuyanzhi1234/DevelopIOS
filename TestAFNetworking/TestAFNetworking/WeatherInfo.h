@@ -7,16 +7,36 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WeatherForecastDetail.h"
 
 @interface WeatherInfo : NSObject
 
+typedef enum ForecastDay {
+    YESTERDAY = 0,
+    TODAY,
+    TOMORROW,
+    THIRDDAY,
+    FORTHDAY,
+    FIFTHDAY
+}ForecastDay;
+
+// 当天天气情况
 @property (copy, nonatomic) NSString *city;
 @property (copy, nonatomic) NSString *curTemprature;
-@property (copy, nonatomic) NSString *weatherType;
-@property (copy, nonatomic) NSString *windDirection;
-@property (copy, nonatomic) NSString *windPower;
-@property (copy, nonatomic) NSString *highestTemprature;
-@property (copy, nonatomic) NSString *lowestTemprature;
 @property (copy, nonatomic) NSString *suggestion;
+
+@property (strong, nonatomic) NSMutableArray *forecastDetailArray;
+
+// 添加天气预报
+- (void)addForecastDetail:(WeatherForecastDetail *)detail;
+
+/**
+ *  查询天气预报
+ *
+ *  @param index ForecastDay类型
+ *
+ *  @return 天气详情
+ */
+- (WeatherForecastDetail *)getForecastDetailByIndex:(ForecastDay)index;
 
 @end

@@ -19,6 +19,7 @@
 		845240571C5C6A500048293C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845240551C5C6A500048293C /* Main.storyboard */; };
 		845240591C5C6A500048293C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845240581C5C6A500048293C /* Assets.xcassets */; };
 		8452405C1C5C6A500048293C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8452405A1C5C6A500048293C /* LaunchScreen.storyboard */; };
+		8475D4681C85C358008DB88F /* WeatherForecastDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475D4671C85C358008DB88F /* WeatherForecastDetail.m */; };
 		9476375719675F756AC16E6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E9133F6C82A73B9FE06E0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		845240581C5C6A500048293C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8452405B1C5C6A500048293C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8452405D1C5C6A500048293C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8475D4661C85C358008DB88F /* WeatherForecastDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForecastDetail.h; sourceTree = "<group>"; };
+		8475D4671C85C358008DB88F /* WeatherForecastDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForecastDetail.m; sourceTree = "<group>"; };
 		84A42B7A1C5DEDD600B249C1 /* 	.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; name = "\t.geojson"; path = "TestAFNetworking/\t.geojson"; sourceTree = "<group>"; };
 		874BE0C46975EA0C1BE9664E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDAB502D048D006E97E232B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +95,8 @@
 			children = (
 				843E6ACB1C851065002CE324 /* WeatherInfo.h */,
 				843E6ACC1C851065002CE324 /* WeatherInfo.m */,
+				8475D4661C85C358008DB88F /* WeatherForecastDetail.h */,
+				8475D4671C85C358008DB88F /* WeatherForecastDetail.m */,
 			);
 			name = Meta;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				845240541C5C6A500048293C /* ViewController.m in Sources */,
 				845240511C5C6A500048293C /* AppDelegate.m in Sources */,
 				843E6ACD1C851065002CE324 /* WeatherInfo.m in Sources */,
+				8475D4681C85C358008DB88F /* WeatherForecastDetail.m in Sources */,
 				8452404E1C5C6A500048293C /* main.m in Sources */,
 				843E6AC91C848088002CE324 /* NetWeatherManager.m in Sources */,
 				843B3B941C623BF7003F301B /* MainViewController.m in Sources */,
