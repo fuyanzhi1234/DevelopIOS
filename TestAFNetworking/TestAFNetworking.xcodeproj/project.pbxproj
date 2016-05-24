@@ -20,6 +20,7 @@
 		845240591C5C6A500048293C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845240581C5C6A500048293C /* Assets.xcassets */; };
 		8452405C1C5C6A500048293C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8452405A1C5C6A500048293C /* LaunchScreen.storyboard */; };
 		8475D4681C85C358008DB88F /* WeatherForecastDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475D4671C85C358008DB88F /* WeatherForecastDetail.m */; };
+		84E3E4A01CF443830093325B /* WeatherDataReformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E3E49F1CF443830093325B /* WeatherDataReformer.m */; };
 		9476375719675F756AC16E6D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E9133F6C82A73B9FE06E0C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		8475D4661C85C358008DB88F /* WeatherForecastDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForecastDetail.h; sourceTree = "<group>"; };
 		8475D4671C85C358008DB88F /* WeatherForecastDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForecastDetail.m; sourceTree = "<group>"; };
 		84A42B7A1C5DEDD600B249C1 /* 	.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; name = "\t.geojson"; path = "TestAFNetworking/\t.geojson"; sourceTree = "<group>"; };
+		84E3E49E1CF443830093325B /* WeatherDataReformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataReformer.h; sourceTree = "<group>"; };
+		84E3E49F1CF443830093325B /* WeatherDataReformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataReformer.m; sourceTree = "<group>"; };
 		874BE0C46975EA0C1BE9664E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FFDAB502D048D006E97E232B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +126,8 @@
 		8452404B1C5C6A500048293C /* TestAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				84E3E49E1CF443830093325B /* WeatherDataReformer.h */,
+				84E3E49F1CF443830093325B /* WeatherDataReformer.m */,
 				843E6ACA1C851040002CE324 /* Meta */,
 				843E6AC61C84805B002CE324 /* Network */,
 				8452404F1C5C6A500048293C /* AppDelegate.h */,
@@ -283,6 +288,7 @@
 				8475D4681C85C358008DB88F /* WeatherForecastDetail.m in Sources */,
 				8452404E1C5C6A500048293C /* main.m in Sources */,
 				843E6AC91C848088002CE324 /* NetWeatherManager.m in Sources */,
+				84E3E4A01CF443830093325B /* WeatherDataReformer.m in Sources */,
 				843B3B941C623BF7003F301B /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
