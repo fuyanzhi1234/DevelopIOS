@@ -21,4 +21,8 @@
     // Configure the view for the selected state
 }
 
+- (void)enlargeTempRangeSize {
+    [self.tempRange setFont:[UIFont fontWithName:[[self.tempRange font] fontName] size:24]];
+}
+
 @end

@@ -40,30 +40,38 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度范围" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsL-U6-p0t">
-                        <rect key="frame" x="128" y="225" width="68" height="21"/>
+                        <rect key="frame" x="128" y="257" width="68" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风力" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHt-9X-9ub">
-                        <rect key="frame" x="145" y="264" width="34" height="21"/>
+                        <rect key="frame" x="145" y="378" width="34" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建议" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nA-1N-3Ft">
-                        <rect key="frame" x="18" y="319" width="288" height="21"/>
+                        <rect key="frame" x="18" y="419" width="288" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="空气质量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hw5-wT-7CK">
+                        <rect key="frame" x="128" y="216" width="68" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="OHt-9X-9ub" firstAttribute="top" secondItem="OsL-U6-p0t" secondAttribute="bottom" constant="18" id="1xJ-n7-QKs"/>
+                    <constraint firstItem="OHt-9X-9ub" firstAttribute="top" secondItem="OsL-U6-p0t" secondAttribute="bottom" constant="100" id="1xJ-n7-QKs"/>
                     <constraint firstItem="Tbh-2s-tGM" firstAttribute="top" secondItem="Igm-gM-ee3" secondAttribute="bottom" constant="17" id="39b-TL-lFU"/>
                     <constraint firstItem="xzT-9T-Vpj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="3Ep-l2-iTg"/>
                     <constraint firstItem="Tbh-2s-tGM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="53s-7P-K5q"/>
                     <constraint firstItem="OHt-9X-9ub" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DC0-37-dqr"/>
+                    <constraint firstItem="OsL-U6-p0t" firstAttribute="top" secondItem="hw5-wT-7CK" secondAttribute="bottom" constant="20" id="F8X-0Q-b0N"/>
+                    <constraint firstItem="hw5-wT-7CK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MoJ-hM-IkN"/>
                     <constraint firstItem="sax-fO-ihK" firstAttribute="top" secondItem="Tbh-2s-tGM" secondAttribute="bottom" constant="13" id="O3t-6U-4Ig"/>
                     <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="0nA-1N-3Ft" secondAttribute="trailing" constant="10" id="Pvv-5k-reo"/>
                     <constraint firstItem="OsL-U6-p0t" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="RqF-pL-O6g"/>
@@ -73,11 +81,12 @@
                     <constraint firstItem="xzT-9T-Vpj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="31" id="g9G-NH-MkA"/>
                     <constraint firstItem="0nA-1N-3Ft" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gjQ-pt-eVC"/>
                     <constraint firstItem="0nA-1N-3Ft" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="ik8-vj-uSd"/>
-                    <constraint firstItem="OsL-U6-p0t" firstAttribute="top" secondItem="sax-fO-ihK" secondAttribute="bottom" constant="29" id="sVt-nU-5cM"/>
-                    <constraint firstItem="0nA-1N-3Ft" firstAttribute="top" secondItem="OHt-9X-9ub" secondAttribute="bottom" constant="34" id="zBB-Xw-6NA"/>
+                    <constraint firstItem="hw5-wT-7CK" firstAttribute="top" secondItem="sax-fO-ihK" secondAttribute="bottom" constant="20" id="vhn-ft-dm7"/>
+                    <constraint firstItem="0nA-1N-3Ft" firstAttribute="top" secondItem="OHt-9X-9ub" secondAttribute="bottom" constant="20" id="zBB-Xw-6NA"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="airQuality" destination="hw5-wT-7CK" id="77q-DU-vUY"/>
                 <outlet property="city" destination="xzT-9T-Vpj" id="o6f-0j-cXa"/>
                 <outlet property="curTemprature" destination="Tbh-2s-tGM" id="V5O-ns-kbw"/>
                 <outlet property="date" destination="sax-fO-ihK" id="hPH-Fh-clD"/>

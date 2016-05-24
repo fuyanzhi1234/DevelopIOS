@@ -11,4 +11,7 @@
 
 @interface MainViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate, WeatherInfoDelegate>
 
+// 刷新天气数据
+- (void)refreshData;
+
 @end

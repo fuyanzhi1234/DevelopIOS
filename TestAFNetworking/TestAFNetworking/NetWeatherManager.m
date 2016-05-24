@@ -51,6 +51,7 @@ static NSString *kWeatherUrl = @"http://wthrcdn.etouch.cn/weather_mini?citykey=1
     weatherInfo.curTemprature = dataWeather[@"wendu"];
     weatherInfo.suggestion = dataWeather[@"ganmao"];
     weatherInfo.city = dataWeather[@"city"];
+    weatherInfo.airQuality = dataWeather[@"aqi"];
     
     // 昨天的天气
     NSDictionary *forecastYesterdayDetail = (NSDictionary *)dataWeather[@"yesterday"];
