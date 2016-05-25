@@ -185,6 +185,14 @@ static NSString *const kTableCellIdentify = @"onlyone";
     [self.refreshControl endRefreshing];
 }
 
+// 网络异常
+- (void)loadError:(NSError *)error {
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"网络错误" message:error.localizedDescription delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alertView show];
+    // 结束刷新动作
+    [self.refreshControl endRefreshing];
+}
+
 - (void)showForecast:(WeatherDetailTableViewCell *)curCell weatherInfo:(WeatherInfo *)weatherInfo day:(ForecastDay)day {
     if (weatherInfo) {
         curCell.city.text = weatherInfo.city;

@@ -12,7 +12,11 @@
 @protocol WeatherInfoDelegate <NSObject>
 
 @required
+// 天气信息获取完成
 - (void)finishGetWeatherInfo:(WeatherInfo *)weatherInfo;
+
+// 网络异常
+- (void)loadError:(NSError *)error;
 
 @end
 

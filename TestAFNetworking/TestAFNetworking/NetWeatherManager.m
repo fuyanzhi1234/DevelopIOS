@@ -31,8 +31,9 @@ static NSString *kWeatherUrl = @"http://wthrcdn.etouch.cn/weather_mini?citykey=1
     [sessionManager GET:kWeatherUrl parameters:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         [self parseWeatherJson:responseObject];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"Error:%@", error.description);
+        NSLog(@"Error:%@", error.localizedDescription);
         NSLog(@"AFJSONRequestSerializer Post Error");
+        [self.weatherInfoDelegate loadError:error];
     }];
     
     /*
