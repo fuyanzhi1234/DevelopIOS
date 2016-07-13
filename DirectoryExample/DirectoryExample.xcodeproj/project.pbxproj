@@ -62,6 +62,7 @@
 				841A13561D2A783F0087EA48 /* Dependence */,
 				841A13551D2A77DA0087EA48 /* NetWork */,
 				841A13541D2A77CB0087EA48 /* Data */,
+				847A99291D362B8E0079F485 /* ViewModel */,
 				841A13531D2A77A10087EA48 /* UI */,
 				841A13521D2A4E360087EA48 /* Resource */,
 				841A133E1D2A43AA0087EA48 /* AppDelegate.h */,
@@ -94,6 +95,8 @@
 		841A13531D2A77A10087EA48 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				847A992B1D362C280079F485 /* CommonView */,
+				847A992A1D362BEC0079F485 /* Login */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -214,16 +217,8 @@
 				841A13601D2A871B0087EA48 /* Const */,
 				841A135D1D2A86C50087EA48 /* Plist */,
 				841A13611D2A87250087EA48 /* Translation */,
-				841A13631D2A886D0087EA48 /* View */,
 			);
 			name = Helper;
-			sourceTree = "<group>";
-		};
-		841A13631D2A886D0087EA48 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
 			sourceTree = "<group>";
 		};
 		841A13641D2A92210087EA48 /* Util */ = {
@@ -245,6 +240,27 @@
 			children = (
 			);
 			name = LocalParty;
+			sourceTree = "<group>";
+		};
+		847A99291D362B8E0079F485 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		847A992A1D362BEC0079F485 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		847A992B1D362C280079F485 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CommonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +482,7 @@
 				841A13511D2A43AA0087EA48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
