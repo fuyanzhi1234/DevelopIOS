@@ -7,25 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		841A133D1D2A43AA0087EA48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A133C1D2A43AA0087EA48 /* main.m */; };
-		841A13401D2A43AA0087EA48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A133F1D2A43AA0087EA48 /* AppDelegate.m */; };
 		841A13431D2A43AA0087EA48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841A13421D2A43AA0087EA48 /* ViewController.m */; };
 		841A13461D2A43AA0087EA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841A13441D2A43AA0087EA48 /* Main.storyboard */; };
-		841A13481D2A43AA0087EA48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841A13471D2A43AA0087EA48 /* Assets.xcassets */; };
 		841A134B1D2A43AA0087EA48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841A13491D2A43AA0087EA48 /* LaunchScreen.storyboard */; };
+		848A379B1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37751D3712E60022A010 /* commit.rtf */; };
+		848A379C1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37771D3712E60022A010 /* commit.rtf */; };
+		848A379D1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37791D3712E60022A010 /* commit.rtf */; };
+		848A379E1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A377C1D3712E60022A010 /* commit.rtf */; };
+		848A379F1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A377E1D3712E60022A010 /* commit.rtf */; };
+		848A37A01D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37811D3712E60022A010 /* commit.rtf */; };
+		848A37A11D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37831D3712E60022A010 /* commit.rtf */; };
+		848A37A21D3712E60022A010 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848A37851D3712E60022A010 /* Info.plist */; };
+		848A37A31D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37871D3712E60022A010 /* commit.rtf */; };
+		848A37A41D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37891D3712E60022A010 /* commit.rtf */; };
+		848A37A51D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A378C1D3712E60022A010 /* commit.rtf */; };
+		848A37A61D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A378E1D3712E60022A010 /* commit.rtf */; };
+		848A37A71D3712E60022A010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848A37911D3712E60022A010 /* Assets.xcassets */; };
+		848A37A81D3712E60022A010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A37941D3712E60022A010 /* AppDelegate.m */; };
+		848A37A91D3712E60022A010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A37951D3712E60022A010 /* main.m */; };
+		848A37AA1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A37981D3712E60022A010 /* commit.rtf */; };
+		848A37AB1D3712E60022A010 /* commit.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 848A379A1D3712E60022A010 /* commit.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		841A13381D2A43AA0087EA48 /* DirectoryExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectoryExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		841A133C1D2A43AA0087EA48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		841A133E1D2A43AA0087EA48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		841A133F1D2A43AA0087EA48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		841A13411D2A43AA0087EA48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		841A13421D2A43AA0087EA48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		841A13451D2A43AA0087EA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		841A13471D2A43AA0087EA48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		841A134A1D2A43AA0087EA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		841A134C1D2A43AA0087EA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848A37751D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37771D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37791D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A377C1D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A377E1D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37811D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37831D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37851D3712E60022A010 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848A37871D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37891D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A378C1D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A378E1D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A37911D3712E60022A010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848A37931D3712E60022A010 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		848A37941D3712E60022A010 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		848A37951D3712E60022A010 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		848A37981D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
+		848A379A1D3712E60022A010 /* commit.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = commit.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,209 +85,206 @@
 		841A133A1D2A43AA0087EA48 /* DirectoryExample */ = {
 			isa = PBXGroup;
 			children = (
-				841A13621D2A87C90087EA48 /* Helper */,
-				841A13561D2A783F0087EA48 /* Dependence */,
-				841A13551D2A77DA0087EA48 /* NetWork */,
-				841A13541D2A77CB0087EA48 /* Data */,
-				847A99291D362B8E0079F485 /* ViewModel */,
-				841A13531D2A77A10087EA48 /* UI */,
-				841A13521D2A4E360087EA48 /* Resource */,
-				841A133E1D2A43AA0087EA48 /* AppDelegate.h */,
-				841A133F1D2A43AA0087EA48 /* AppDelegate.m */,
+				848A37731D3712E60022A010 /* Data */,
+				848A377A1D3712E60022A010 /* Dependence */,
+				848A377F1D3712E60022A010 /* Helper */,
+				848A378A1D3712E60022A010 /* NetWork */,
+				848A378F1D3712E60022A010 /* Resource */,
+				848A37961D3712E60022A010 /* UI */,
+				848A37991D3712E60022A010 /* ViewModel */,
+				848A37921D3712E60022A010 /* Supportting Files */,
 				841A13411D2A43AA0087EA48 /* ViewController.h */,
 				841A13421D2A43AA0087EA48 /* ViewController.m */,
 				841A13441D2A43AA0087EA48 /* Main.storyboard */,
 				841A13491D2A43AA0087EA48 /* LaunchScreen.storyboard */,
-				841A133B1D2A43AA0087EA48 /* Supporting Files */,
 			);
 			path = DirectoryExample;
 			sourceTree = "<group>";
 		};
-		841A133B1D2A43AA0087EA48 /* Supporting Files */ = {
+		848A37731D3712E60022A010 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				841A133C1D2A43AA0087EA48 /* main.m */,
+				848A37741D3712E60022A010 /* Database */,
+				848A37761D3712E60022A010 /* Model */,
+				848A37781D3712E60022A010 /* ModelManager */,
 			);
-			name = "Supporting Files";
+			path = Data;
 			sourceTree = "<group>";
 		};
-		841A13521D2A4E360087EA48 /* Resource */ = {
+		848A37741D3712E60022A010 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				841A135E1D2A86D50087EA48 /* Image */,
+				848A37751D3712E60022A010 /* commit.rtf */,
 			);
-			name = Resource;
+			path = Database;
 			sourceTree = "<group>";
 		};
-		841A13531D2A77A10087EA48 /* UI */ = {
+		848A37761D3712E60022A010 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				847A992B1D362C280079F485 /* CommonView */,
-				847A992A1D362BEC0079F485 /* Login */,
+				848A37771D3712E60022A010 /* commit.rtf */,
 			);
-			name = UI;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		841A13541D2A77CB0087EA48 /* Data */ = {
+		848A37781D3712E60022A010 /* ModelManager */ = {
 			isa = PBXGroup;
 			children = (
-				841A13591D2A83D60087EA48 /* Database */,
-				841A13581D2A78F30087EA48 /* Manager */,
-				841A13571D2A78EB0087EA48 /* Model */,
+				848A37791D3712E60022A010 /* commit.rtf */,
 			);
-			name = Data;
+			path = ModelManager;
 			sourceTree = "<group>";
 		};
-		841A13551D2A77DA0087EA48 /* NetWork */ = {
+		848A377A1D3712E60022A010 /* Dependence */ = {
 			isa = PBXGroup;
 			children = (
-				841A135B1D2A86870087EA48 /* Http */,
-				841A135A1D2A867F0087EA48 /* Tcp */,
+				848A377B1D3712E60022A010 /* LocalParty */,
+				848A377D1D3712E60022A010 /* ThirdParty */,
 			);
-			name = NetWork;
+			path = Dependence;
 			sourceTree = "<group>";
 		};
-		841A13561D2A783F0087EA48 /* Dependence */ = {
+		848A377B1D3712E60022A010 /* LocalParty */ = {
 			isa = PBXGroup;
 			children = (
-				841A13661D2B5CB00087EA48 /* LocalParty */,
-				841A13651D2B5CA10087EA48 /* ThirdParty */,
+				848A377C1D3712E60022A010 /* commit.rtf */,
 			);
-			name = Dependence;
+			path = LocalParty;
 			sourceTree = "<group>";
 		};
-		841A13571D2A78EB0087EA48 /* Model */ = {
+		848A377D1D3712E60022A010 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				848A377E1D3712E60022A010 /* commit.rtf */,
 			);
-			name = Model;
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
-		841A13581D2A78F30087EA48 /* Manager */ = {
+		848A377F1D3712E60022A010 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				848A37801D3712E60022A010 /* Category */,
+				848A37821D3712E60022A010 /* Const */,
+				848A37841D3712E60022A010 /* Plist */,
+				848A37861D3712E60022A010 /* Translation */,
+				848A37881D3712E60022A010 /* Util */,
 			);
-			name = Manager;
+			path = Helper;
 			sourceTree = "<group>";
 		};
-		841A13591D2A83D60087EA48 /* Database */ = {
+		848A37801D3712E60022A010 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				848A37811D3712E60022A010 /* commit.rtf */,
 			);
-			name = Database;
+			path = Category;
 			sourceTree = "<group>";
 		};
-		841A135A1D2A867F0087EA48 /* Tcp */ = {
+		848A37821D3712E60022A010 /* Const */ = {
 			isa = PBXGroup;
 			children = (
+				848A37831D3712E60022A010 /* commit.rtf */,
 			);
-			name = Tcp;
+			path = Const;
 			sourceTree = "<group>";
 		};
-		841A135B1D2A86870087EA48 /* Http */ = {
+		848A37841D3712E60022A010 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				848A37851D3712E60022A010 /* Info.plist */,
 			);
-			name = Http;
+			path = Plist;
 			sourceTree = "<group>";
 		};
-		841A135C1D2A868F0087EA48 /* Category */ = {
+		848A37861D3712E60022A010 /* Translation */ = {
 			isa = PBXGroup;
 			children = (
+				848A37871D3712E60022A010 /* commit.rtf */,
 			);
-			name = Category;
+			path = Translation;
 			sourceTree = "<group>";
 		};
-		841A135D1D2A86C50087EA48 /* Plist */ = {
+		848A37881D3712E60022A010 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				841A134C1D2A43AA0087EA48 /* Info.plist */,
+				848A37891D3712E60022A010 /* commit.rtf */,
 			);
-			name = Plist;
+			path = Util;
 			sourceTree = "<group>";
 		};
-		841A135E1D2A86D50087EA48 /* Image */ = {
+		848A378A1D3712E60022A010 /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				841A13471D2A43AA0087EA48 /* Assets.xcassets */,
+				848A378B1D3712E60022A010 /* Http */,
+				848A378D1D3712E60022A010 /* Tcp */,
 			);
-			name = Image;
+			path = NetWork;
 			sourceTree = "<group>";
 		};
-		841A135F1D2A870D0087EA48 /* Macro */ = {
+		848A378B1D3712E60022A010 /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				848A378C1D3712E60022A010 /* commit.rtf */,
 			);
-			name = Macro;
+			path = Http;
 			sourceTree = "<group>";
 		};
-		841A13601D2A871B0087EA48 /* Const */ = {
+		848A378D1D3712E60022A010 /* Tcp */ = {
 			isa = PBXGroup;
 			children = (
-				841A135F1D2A870D0087EA48 /* Macro */,
+				848A378E1D3712E60022A010 /* commit.rtf */,
 			);
-			name = Const;
+			path = Tcp;
 			sourceTree = "<group>";
 		};
-		841A13611D2A87250087EA48 /* Translation */ = {
+		848A378F1D3712E60022A010 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				848A37901D3712E60022A010 /* Image */,
 			);
-			name = Translation;
+			path = Resource;
 			sourceTree = "<group>";
 		};
-		841A13621D2A87C90087EA48 /* Helper */ = {
+		848A37901D3712E60022A010 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				841A13641D2A92210087EA48 /* Util */,
-				841A135C1D2A868F0087EA48 /* Category */,
-				841A13601D2A871B0087EA48 /* Const */,
-				841A135D1D2A86C50087EA48 /* Plist */,
-				841A13611D2A87250087EA48 /* Translation */,
+				848A37911D3712E60022A010 /* Assets.xcassets */,
 			);
-			name = Helper;
+			path = Image;
 			sourceTree = "<group>";
 		};
-		841A13641D2A92210087EA48 /* Util */ = {
+		848A37921D3712E60022A010 /* Supportting Files */ = {
 			isa = PBXGroup;
 			children = (
+				848A37931D3712E60022A010 /* AppDelegate.h */,
+				848A37941D3712E60022A010 /* AppDelegate.m */,
+				848A37951D3712E60022A010 /* main.m */,
 			);
-			name = Util;
+			path = "Supportting Files";
 			sourceTree = "<group>";
 		};
-		841A13651D2B5CA10087EA48 /* ThirdParty */ = {
+		848A37961D3712E60022A010 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				848A37971D3712E60022A010 /* CommonView */,
 			);
-			name = ThirdParty;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		841A13661D2B5CB00087EA48 /* LocalParty */ = {
+		848A37971D3712E60022A010 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
+				848A37981D3712E60022A010 /* commit.rtf */,
 			);
-			name = LocalParty;
+			path = CommonView;
 			sourceTree = "<group>";
 		};
-		847A99291D362B8E0079F485 /* ViewModel */ = {
+		848A37991D3712E60022A010 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				848A379A1D3712E60022A010 /* commit.rtf */,
 			);
-			name = ViewModel;
-			sourceTree = "<group>";
-		};
-		847A992A1D362BEC0079F485 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Login;
-			sourceTree = "<group>";
-		};
-		847A992B1D362C280079F485 /* CommonView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CommonView;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,9 +344,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848A379B1D3712E60022A010 /* commit.rtf in Resources */,
+				848A379C1D3712E60022A010 /* commit.rtf in Resources */,
 				841A134B1D2A43AA0087EA48 /* LaunchScreen.storyboard in Resources */,
-				841A13481D2A43AA0087EA48 /* Assets.xcassets in Resources */,
+				848A37A31D3712E60022A010 /* commit.rtf in Resources */,
+				848A37AB1D3712E60022A010 /* commit.rtf in Resources */,
+				848A37A71D3712E60022A010 /* Assets.xcassets in Resources */,
+				848A37A11D3712E60022A010 /* commit.rtf in Resources */,
+				848A379E1D3712E60022A010 /* commit.rtf in Resources */,
+				848A379F1D3712E60022A010 /* commit.rtf in Resources */,
+				848A37A51D3712E60022A010 /* commit.rtf in Resources */,
+				848A37A01D3712E60022A010 /* commit.rtf in Resources */,
 				841A13461D2A43AA0087EA48 /* Main.storyboard in Resources */,
+				848A37A41D3712E60022A010 /* commit.rtf in Resources */,
+				848A37A61D3712E60022A010 /* commit.rtf in Resources */,
+				848A37AA1D3712E60022A010 /* commit.rtf in Resources */,
+				848A37A21D3712E60022A010 /* Info.plist in Resources */,
+				848A379D1D3712E60022A010 /* commit.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,9 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848A37A81D3712E60022A010 /* AppDelegate.m in Sources */,
+				848A37A91D3712E60022A010 /* main.m in Sources */,
 				841A13431D2A43AA0087EA48 /* ViewController.m in Sources */,
-				841A13401D2A43AA0087EA48 /* AppDelegate.m in Sources */,
-				841A133D1D2A43AA0087EA48 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
