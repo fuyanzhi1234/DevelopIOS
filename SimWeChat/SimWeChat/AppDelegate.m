@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import <JSPatch/JSPatch.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,44 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    [JSPatch testScriptInBundle];
+    [JSPatch updateConfigWithAppKey:@"6672e54cb22ec35e"];
+//    [JSPatch setupConfigInterval:10];
+    [JSPatch setupUpdatedConfigCallback:^(NSDictionary *configs, NSError *error) {
+        NSLog(@"%@, %@", configs, error);
+        NSDictionary *config = [JSPatch getConfigParams];
+        NSLog(@"%@", config);
+    }];
+    
+    
+    [JSPatch startWithAppKey:@"6672e54cb22ec35e"];
+    [JSPatch sync];
+    [JSPatch setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
+        switch (type) {
+                // 有更新
+            case JPCallbackTypeUpdate: {
+                NSLog(@"updated %@ %@", data, error);
+                break;
+            }
+                // 更新完成
+            case JPCallbackTypeUpdateDone: {
+                NSLog(@"update done %@ %@", data, error);
+                break;
+            }
+                // 运行脚本
+            case JPCallbackTypeRunScript: {
+                NSLog(@"run script %@ %@", data, error);
+                break;
+            }
+            case JPCallbackTypeUnknow: {
+                NSLog(@"unknow %@ %@", data, error);
+                break;
+            }
+            default:
+                break;
+        }
+    }];
+    
     // Override point for customization after application launch.
     RootViewController *rootVC = [[RootViewController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
@@ -39,6 +78,7 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

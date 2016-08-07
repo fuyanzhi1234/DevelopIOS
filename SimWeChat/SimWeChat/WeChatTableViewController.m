@@ -104,7 +104,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"%d", _weChatData.count);
+    NSLog(@"%i", _weChatData.count);
+    return 100;
     return [_weChatData count];
 }
 

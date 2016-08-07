@@ -50,6 +50,10 @@
 		84D35F581C095ABC0061F10D /* YCXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D35F551C095ABC0061F10D /* YCXMenu.m */; };
 		84D35F591C095ABC0061F10D /* YCXMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D35F571C095ABC0061F10D /* YCXMenuItem.m */; };
 		84D399921C1DA93D00355783 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D399911C1DA93D00355783 /* SettingsTableViewCell.m */; };
+		84E2AECF1D424A8300139A02 /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2AECE1D424A8300139A02 /* JSPatch.framework */; };
+		84E2AED11D424BC200139A02 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2AED01D424BC200139A02 /* libz.tbd */; };
+		84E2AED31D424BCA00139A02 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E2AED21D424BCA00139A02 /* JavaScriptCore.framework */; };
+		84E2AED51D42565900139A02 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 84E2AED41D42565900139A02 /* main.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +129,10 @@
 		84D35F571C095ABC0061F10D /* YCXMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCXMenuItem.m; path = Dependence/YCXMenu/YCXMenuItem.m; sourceTree = "<group>"; };
 		84D399901C1DA93D00355783 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewCell.h; path = Dependence/TabelSettings/SettingsTableViewCell.h; sourceTree = "<group>"; };
 		84D399911C1DA93D00355783 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewCell.m; path = Dependence/TabelSettings/SettingsTableViewCell.m; sourceTree = "<group>"; };
+		84E2AECE1D424A8300139A02 /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
+		84E2AED01D424BC200139A02 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		84E2AED21D424BCA00139A02 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		84E2AED41D42565900139A02 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		C1C7AE6B8022106BA10064B6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +141,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E2AED31D424BCA00139A02 /* JavaScriptCore.framework in Frameworks */,
+				84E2AED11D424BC200139A02 /* libz.tbd in Frameworks */,
+				84E2AECF1D424A8300139A02 /* JSPatch.framework in Frameworks */,
 				512A91BD1B9FDF63732992A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +154,9 @@
 		81F2138FE90D355494C5E3F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84E2AED21D424BCA00139A02 /* JavaScriptCore.framework */,
+				84E2AED01D424BC200139A02 /* libz.tbd */,
+				84E2AECE1D424A8300139A02 /* JSPatch.framework */,
 				84BB70A11BD927BE002CAACD /* QuartzCore.framework */,
 				7531EE6B1A00A9D64623422D /* libPods.a */,
 			);
@@ -246,6 +260,7 @@
 			children = (
 				8476A2691BCA842B00B92C84 /* WeChatTableViewController.h */,
 				8476A26A1BCA842B00B92C84 /* WeChatTableViewController.m */,
+				84E2AED41D42565900139A02 /* main.js */,
 				8476A26B1BCA842B00B92C84 /* WeChatTableViewController.xib */,
 				84C9D3631BE0EFAB00B6BCF0 /* WeChatTableViewCell.h */,
 				84C9D3641BE0EFAB00B6BCF0 /* WeChatTableViewCell.m */,
@@ -431,6 +446,7 @@
 				8427F2811BC4E89600356EF3 /* Assets.xcassets in Resources */,
 				8427F28F1BC4EAA700356EF3 /* RootViewController.xib in Resources */,
 				8427F2AF1BC51AA700356EF3 /* MeViewController.xib in Resources */,
+				84E2AED51D42565900139A02 /* main.js in Resources */,
 				8459983D1C2E9F3A001ED498 /* ShakeViewController.xib in Resources */,
 				8427F27F1BC4E89600356EF3 /* Main.storyboard in Resources */,
 			);
