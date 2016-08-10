@@ -19,7 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self.textEdit addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionOld context:nil];
+    [self.textEdit addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:@""];
+    [self.textEdit addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionOld context:@""];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,5 +38,7 @@
 
 - (IBAction)chageText:(id)sender {
     [self.textEdit setText:@"xx"];
+    [self.textEdit removeObserver:self forKeyPath:@"text" context:@""];
+//    [self.textEdit removeObserver:self forKeyPath:@"text" context:nil];
 }
 @end
